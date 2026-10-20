@@ -9,10 +9,11 @@ art-law carrier, asset pipeline, world mapping, gameplay table, phases, risks).
 
 ## Phase checklist (fire one at a time)
 
-- [x] **P0** — blueprint + scaffold + exporters + manifest (this commit;
-      record in docs/phases/P0.md)
+- [x] **P0** — blueprint + scaffold + exporters + manifest (live on GitHub;
+      record in docs/phases/P0.md; refreshed at feat 58ea081 / CC-C17v2)
 - [ ] **P1** — UE project bootstrap on Nicko's PC + pixelation post-process gate
-      (6–10 h) — docs/phases/P1.md
+      (6–10 h) — docs/phases/P1.md, setup guide docs/PC-SETUP.md, agent brief
+      docs/AGENT-BRIEF.md
 - [ ] **P2** — asset ingest + IK retarget pass (12–18 h) — docs/phases/P2.md
 - [ ] **P3** — world build: landscape + World Partition + region C PCG biomes
       (16–24 h) — docs/phases/P3.md
@@ -64,5 +65,5 @@ regionC_heightmap_1009x1009.png + regionC_heightmap_meta.json, ASSET_MANIFEST.cs
   C-series rulings C1..C16 live on feat + its worktree /tmp/wh-worldfeat).
 - Prior art: main's docs/planning 30 + 52-58 (pre-pivot UE5.8 spec set, reconciled
   into this plan §3).
-- Art corpus: 324 GLBs @ art-direction/3d/assets (feat worktree carries the 10-20
-  old_king bakes that are not yet wired into the browser game).
+- Art corpus: 324 GLBs @ art-direction/3d/assets on feat/world-visuals (tip 58ea081
+  carries the old_king kit wired into region C per CC-C17v2).

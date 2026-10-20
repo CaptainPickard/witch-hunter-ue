@@ -18,7 +18,9 @@ phased checklist (§9 + docs/phases/) is fired one phase at a time in later sess
 ## 2. What exists today (verified in-repo, 2026-10-20)
 
 Source of truth for world data: prototype/js/CONFIG.js on the feat/world-visuals line
-(tip b01e764, CC-C16 den flip + densify; worktree /tmp/wh-worldfeat mirrors it).
+(tip 58ea081, CC-C17v2 spooky forest integration — the old-king kit is now WIRED into
+region C: farm homestead at (150.5,-256.7), ruin accents, den-corridor spooky set;
+worktree /tmp/wh-worldfeat mirrors it). Prop counts: A 133 / B 62 / C 200 / D 34.
 
 World (4 regions + boundary):
 | Region | Content in CONFIG.js | Port notes |
@@ -124,10 +126,11 @@ until the gate map reproduces the prototype look.
   Nanite off, no LOD generation, no auto-collisions (collisions authored in UE per
   class: PCG scatter gets trunk-capsules/proxy collisions; set dressing gets
   simple-convex/complex-as-specified).
-- **old_king kit (18 GLBs, 242,801 tris)**: baked 10-20 but never wired into the browser
-  (tri budget). The UE port ingests ALL of it in P2 — farm kit, ruin kit, oak/pine trees.
-  The farm kit ships WITHOUT ok-fence-corner v1/v3 (3x visual-QA fail); v2 is wired in
-  the browser and ingests fine.
+- **old_king kit (18 GLBs, 242,801 tris)**: WIRED into the browser as of CC-C17v2
+  (11 ok-* GLBs load in assets.js; farm homestead/ruin accents/spooky den-corridor rows
+  live in region C; fence-corner-v2 ruled usable at scale 1.5 as a bracket piece). The
+  UE port ingests the full kit in P2. The farm kit ships WITHOUT ok-fence-corner v1/v3
+  (3x visual-QA fail).
 - **Rot Mother**: the races_regen bake is 182,444 tris in one static shell. Import
   as-is (law), but flag for a mid-poly split decision if the editor chokes in P2 —
   that would be an art-side re-bake, decided with Nicko at the P2 gate.
@@ -225,9 +228,10 @@ Details + per-phase gates: docs/phases/P1.md … P8.md (fired one at a time).
    the split is an art-side re-bake ruled with Nicko at P2, not a silent decimation.
 5. **fence-corner lineage** — v1/v3 blocked (3x QA fail), v2 wired + ingestible; if
    the farm kit needs a straight corner later it is an art round, out of port scope.
-6. **C-series rulings live only in the worktree/feat ref** (CONFIG.js 216 KB there vs
-   52 KB on dev) — the feat/world-visuals line is the data source for all dumps; dump
-   scripts default to /tmp/wh-worldfeat and say so in their provenance output.
+6. **C-series rulings live on the feat/world-visuals line** (CONFIG.js 216 KB there vs
+   52 KB on dev) — the feat line is the data source for all dumps; dump scripts default
+   to /tmp/wh-worldfeat and say so in their provenance output. All dumps re-ran at
+   58ea081 (CC-C17v2) on 2026-10-20.
 
 ## 12. Parity targets (the P8 sweep runs against these)
 
@@ -239,13 +243,14 @@ Details + per-phase gates: docs/phases/P1.md … P8.md (fired one at a time).
 - Visual: G-P1-1 pixel-register register-match on a shared test scene.
 - The boss den: lair orientation (mouth faces map centre), rot pools, minions.
 
-## 13. Decision needed from Nicko (one ask)
+## 13. Decision (RESOLVED by Nicko, 2026-10-20)
 
-1. **Engine pin**: UE 5.8 (recommended — current stable; the prior doc set is already
-   5.8-aligned; PCG Biome Core/Sample first-party) vs 5.5/5.6 (only if his PC/GPU
-   install constraints demand it).
-2. **Repo name**: `witch-hunter-ue` (created locally, uncommitted-remote; GitHub remote
-   created only on his approval).
+1. **Engine pin: UE 5.8.**
+2. **Repo name: witch-hunter-ue** — GitHub remote created and pushed 2026-10-20
+   (github.com/CaptainPickard/witch-hunter-ue; dev + main both track the P0 line;
+   main is Nicko-merge-only hereafter, mirroring the witch-hunter git law).
+3. Build execution: a Claude Code session on Nicko's PC starts the UE side
+   (docs/PC-SETUP.md + CLAUDE.md brief the agent; P1 is the first phase to fire).
 
 ## 14. Repo layout (this repo)
 
