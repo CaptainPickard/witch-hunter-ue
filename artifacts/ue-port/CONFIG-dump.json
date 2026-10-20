@@ -16,7 +16,7 @@
       "manifestAssets": 19,
       "regionAProps": 133,
       "regionBProps": 62,
-      "regionCProps": 192,
+      "regionCProps": 200,
       "regionDProps": 34
     },
     "notes": [
@@ -2513,378 +2513,432 @@
           "x": -28,
           "z": -296,
           "rotY": 5.91,
-          "scale": 29
+          "scale": 29,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 30,
           "z": -238,
           "rotY": 0.19,
-          "scale": 28.41
+          "scale": 28.41,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -26,
           "z": -178,
           "rotY": 4.65,
-          "scale": 28.21
+          "scale": 28.21,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 24,
           "z": -128,
           "rotY": 1.94,
-          "scale": 28.73
+          "scale": 28.73,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -56,
           "z": -404,
           "rotY": 5.65,
-          "scale": 29.93
+          "scale": 29.93,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 56,
           "z": -404,
           "rotY": 1.91,
-          "scale": 28.67
+          "scale": 28.67,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 86.4,
           "z": -461.4,
           "rotY": 4.4,
-          "scale": 20.19
+          "scale": 20.19,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 35.9,
           "z": -498.1,
           "rotY": 3.28,
-          "scale": 20.74
+          "scale": 20.74,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -55,
           "z": -348.3,
           "rotY": 1.52,
-          "scale": 24.4
+          "scale": 24.4,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -109.2,
           "z": -337.1,
           "rotY": 5.97,
-          "scale": 16.98
+          "scale": 16.98,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -50.1,
           "z": -245.3,
           "rotY": 3.37,
-          "scale": 21.49
+          "scale": 21.49,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 103.5,
           "z": -513.8,
           "rotY": 4.77,
-          "scale": 22.99
+          "scale": 22.99,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -126.7,
           "z": -281.9,
           "rotY": 4.9,
-          "scale": 23.08
+          "scale": 23.08,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -141.2,
           "z": -382.4,
           "rotY": 2.69,
-          "scale": 21.34
+          "scale": 21.34,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 83.4,
           "z": -220.7,
           "rotY": 0.58,
-          "scale": 19.02
+          "scale": 19.02,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 73.1,
           "z": -559.7,
           "rotY": 4.38,
-          "scale": 23.5
+          "scale": 23.5,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -81.1,
           "z": -164.7,
           "rotY": 1.76,
-          "scale": 22.24
+          "scale": 22.24,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 135.9,
           "z": -560.5,
           "rotY": 0.46,
-          "scale": 22.61
+          "scale": 22.61,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -117.3,
           "z": -227.3,
           "rotY": 2.84,
-          "scale": 25.03
+          "scale": 25.03,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 84.7,
           "z": -614,
           "rotY": 0.3,
-          "scale": 18.29
+          "scale": 18.29,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 111.3,
           "z": -406.2,
           "rotY": 3.47,
-          "scale": 19.09
+          "scale": 19.09,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 56,
           "z": -349,
           "rotY": 5.87,
-          "scale": 24.35
+          "scale": 24.35,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 15.1,
           "z": -446,
           "rotY": 2.01,
-          "scale": 19.14
+          "scale": 19.14,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 166.7,
           "z": -514.8,
           "rotY": 2.29,
-          "scale": 17.33
+          "scale": 17.33,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -19.3,
           "z": -499,
           "rotY": 2.08,
-          "scale": 17.17
+          "scale": 17.17,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 82.6,
           "z": -276.2,
           "rotY": 3.71,
-          "scale": 20.35
+          "scale": 20.35,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 10.4,
           "z": -551.8,
           "rotY": 2.47,
-          "scale": 24.72
+          "scale": 24.72,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 133.6,
           "z": -133.8,
           "rotY": 0.83,
-          "scale": 23.07
+          "scale": 23.07,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 257.7,
           "z": -451.6,
           "rotY": 0.4,
-          "scale": 21.53
+          "scale": 21.53,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -176.1,
           "z": -254.5,
           "rotY": 5.39,
-          "scale": 20.42
+          "scale": 20.42,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -172.3,
           "z": -199.5,
           "rotY": 1.21,
-          "scale": 20.27
+          "scale": 20.27,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -174.5,
           "z": -312.4,
           "rotY": 6.28,
-          "scale": 19.49
+          "scale": 19.49,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 215.3,
           "z": -208.5,
           "rotY": 4.54,
-          "scale": 21.1
+          "scale": 21.1,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -70.6,
           "z": -476.1,
           "rotY": 0.66,
-          "scale": 17.22
+          "scale": 17.22,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 153.1,
           "z": -460.7,
           "rotY": 4.43,
-          "scale": 24.56
+          "scale": 24.56,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 166.7,
           "z": -405.7,
           "rotY": 3.46,
-          "scale": 21.21
+          "scale": 21.21,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -178.2,
           "z": -424.2,
           "rotY": 3.8,
-          "scale": 18.06
+          "scale": 18.06,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -225,
           "z": -453.3,
           "rotY": 3.29,
-          "scale": 18.43
+          "scale": 18.43,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -124.3,
           "z": -436.8,
           "rotY": 2.66,
-          "scale": 21.83
+          "scale": 21.83,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 229.5,
           "z": -404.2,
           "rotY": 1.94,
-          "scale": 21.67
+          "scale": 21.67,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 191,
           "z": -297.9,
           "rotY": 2.52,
-          "scale": 23.34
+          "scale": 23.34,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 172.1,
           "z": -242.9,
           "rotY": 1.81,
-          "scale": 22.22
+          "scale": 22.22,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 213.9,
           "z": -351,
           "rotY": 5.37,
-          "scale": 19.05
+          "scale": 19.05,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": -225.1,
           "z": -281.7,
           "rotY": 5.06,
-          "scale": 24.34
+          "scale": 24.34,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 134.1,
           "z": -353.5,
           "rotY": 3.67,
-          "scale": 25.62
+          "scale": 25.62,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -44.9,
           "z": -574.4,
           "rotY": 4,
-          "scale": 25.82
+          "scale": 25.82,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -233.6,
           "z": -398.8,
           "rotY": 1.1,
-          "scale": 18.37
+          "scale": 18.37,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -172.1,
           "z": -487.9,
           "rotY": 3.54,
-          "scale": 25.24
+          "scale": 25.24,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -87.1,
           "z": -528.6,
           "rotY": 1.31,
-          "scale": 19.8
+          "scale": 19.8,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -153.6,
           "z": -544.1,
           "rotY": 0.28,
-          "scale": 24.45
+          "scale": 24.45,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 136.1,
           "z": -293.7,
           "rotY": 4.93,
-          "scale": 22.37
+          "scale": 22.37,
+          "cullM": 140
         },
         {
           "asset": "witchwoodTree",
           "x": 47.4,
           "z": -179.1,
           "rotY": 3.9,
-          "scale": 24.15
+          "scale": 24.15,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": 27,
           "z": -298.1,
           "rotY": 3.88,
-          "scale": 17.84
+          "scale": 17.84,
+          "cullM": 140
         },
         {
           "asset": "yewTree",
           "x": -224.8,
           "z": -216.6,
           "rotY": 5.98,
-          "scale": 22.85
+          "scale": 22.85,
+          "cullM": 140
         },
         {
           "asset": "treeStump",
@@ -3789,7 +3843,7 @@
           "x": 148.2,
           "z": -271.3,
           "rotY": 3.15,
-          "scale": 2.54,
+          "scale": 2.535,
           "cullM": 120
         },
         {
@@ -3839,6 +3893,73 @@
           "rotY": 1.2,
           "scale": 12,
           "cullM": 140
+        },
+        {
+          "asset": "deadTree",
+          "x": -144.7,
+          "z": -180.8,
+          "rotY": 1.1,
+          "scale": 8.6,
+          "cullM": 140
+        },
+        {
+          "asset": "deadTree",
+          "x": -176.5,
+          "z": -233,
+          "rotY": 3.4,
+          "scale": 9.2,
+          "cullM": 140
+        },
+        {
+          "asset": "skullPile",
+          "x": -148.7,
+          "z": -206.6,
+          "rotY": 2.4,
+          "scale": 1.2,
+          "cullM": 120
+        },
+        {
+          "asset": "blightcap",
+          "x": -149.8,
+          "z": -233.5,
+          "rotY": 0.5,
+          "scale": 1.4,
+          "cullM": 120
+        },
+        {
+          "asset": "blightcap",
+          "x": -123.1,
+          "z": -199.6,
+          "rotY": 2.2,
+          "scale": 1.6,
+          "cullM": 120
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -76.3,
+          "z": -140.4,
+          "rotY": 0.9,
+          "scale": 2.8,
+          "y": -1.18,
+          "cullM": 120
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -80.7,
+          "z": -144.2,
+          "rotY": 3.1,
+          "scale": 2.2,
+          "y": -0.93,
+          "cullM": 120
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -86.6,
+          "z": -144.1,
+          "rotY": 5,
+          "scale": 2.5,
+          "y": -1.05,
+          "cullM": 120
         }
       ],
       "rotLair": {
