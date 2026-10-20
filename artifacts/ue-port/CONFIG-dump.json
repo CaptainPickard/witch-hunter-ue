@@ -1,0 +1,7343 @@
+{
+  "schema": "wh-ue-port-config-dump/1",
+  "sourceFile": "/tmp/wh-worldfeat/prototype/js/CONFIG.js",
+  "generatedBy": "scripts/dump_config.js",
+  "summary": {
+    "configFormat": "top-level regionA..D keys",
+    "regions": [
+      "regionA",
+      "regionB",
+      "regionC",
+      "regionD"
+    ],
+    "scatterSeed": 20261005,
+    "wallSeed": 20261006,
+    "counts": {
+      "manifestAssets": 19,
+      "regionAProps": 133,
+      "regionBProps": 62,
+      "regionCProps": 192,
+      "regionDProps": 34
+    },
+    "notes": [
+      "Coordinate system: browser Three.js, +Y up, world XZ plane.",
+      "UE mapping: X_ue = X_web, Y_ue = Y_web(up), Z_ue = -Z_web (left-handed swap).",
+      "All rows land verbatim in this dump; the UE side re-reads them at build time.",
+      "Primary source is the feat/world-visuals worktree (newest rulings C1..C16); the dev checkout config is a subset."
+    ]
+  },
+  "config": {
+    "renderer": {
+      "outputColorSpaceSRGB": true,
+      "toneMappingName": "Neutral",
+      "toneMappingExposure": 1.15,
+      "maxPixelRatio": 2,
+      "internalResDiv": 2,
+      "shadowMapEnabled": false
+    },
+    "lighting": {
+      "ambientIntensity": 0,
+      "hemiSkyColor": 4872832,
+      "hemiGroundColor": 1447966,
+      "hemiBaseIntensity": 0.55,
+      "moonColor": 11058406,
+      "moonIntensity": 0.9,
+      "moonAzimuthDeg": 0,
+      "moonElevationDeg": 30,
+      "regionBFillMult": 1.15
+    },
+    "playerLight": {
+      "flickerPhaseStep": 2.3,
+      "projectilePoolSize": 2
+    },
+    "sky": {
+      "domeRadius": 400,
+      "zenithColor": 461336,
+      "horizonBand": 2831184,
+      "horizonGlow": 9410733,
+      "horizonGlowStop": 0.16,
+      "starCount": 600,
+      "starSizeMin": 1.2,
+      "starSizeMax": 2.6,
+      "starColors": [
+        13621480,
+        11451088,
+        15265012,
+        10466008
+      ],
+      "twinklePct": 12,
+      "moonAzimuthDeg": 0,
+      "moonElevationDeg": 30,
+      "moonDistance": 330,
+      "moonSizePx": 64,
+      "moonColor": 14673906,
+      "moonGlowColor": 11058406
+    },
+    "lightPool": {
+      "size": 4,
+      "color": 16761466,
+      "distance": 11,
+      "decay": 2,
+      "handoffFadeSec": 0.35,
+      "minIntensityFloor": 0
+    },
+    "lightSockets": {
+      "lanternPost": {
+        "heightFraction": 0.76,
+        "intensity": 9,
+        "offset": [
+          -0.3,
+          0
+        ]
+      },
+      "banditCampfire": {
+        "heightFraction": 0.55,
+        "intensity": 3.2,
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "whCampkit": {
+        "heightFraction": 0.25,
+        "intensity": 3.2,
+        "offset": [
+          0,
+          0
+        ]
+      },
+      "lanternWaymarker": {
+        "heightFraction": 0.67,
+        "intensity": 9.5,
+        "offset": [
+          0,
+          0.35
+        ]
+      },
+      "b3Gate": {
+        "heightFraction": 0.45,
+        "intensity": 5,
+        "offset": [
+          0,
+          0
+        ]
+      }
+    },
+    "world": {
+      "groundRadius": 90,
+      "playerMargin": 1.5,
+      "visualGroundFogMult": 1.1,
+      "fogOpaqueFrac": 0.95,
+      "colliderCorridorHalfDepth": 6,
+      "groundColorA": 4012588,
+      "groundColorB": 2303520,
+      "groundTexture": {
+        "size": 256,
+        "repeat": 12,
+        "blotchCount": 140,
+        "mossDensity": 0.06,
+        "puddleDensity": 0.03
+      },
+      "dirtPath": {
+        "regionId": "hold_outskirts",
+        "zFrom": 86,
+        "zTo": 32,
+        "halfWidth": 2.7,
+        "swayAmp": 1.6,
+        "swayPeriod": 34,
+        "y": 0.02,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1
+      },
+      "fogNearFactor": 0.25,
+      "fogFarFactor": 1.5,
+      "characterHeight": 1.8
+    },
+    "regionA": {
+      "id": "hold_outskirts",
+      "name": "Hold Outskirts",
+      "spawn": {
+        "x": 2.5,
+        "z": 74
+      },
+      "gravityY": -22,
+      "fogColor": 10133667,
+      "fogDensity": 0.012,
+      "cemeteryFog": {
+        "zoneKeepOutRegionId": "hold_outskirts",
+        "density": 0.03,
+        "color": 8359590,
+        "rampStart": 1.35,
+        "rampEnd": 0.55
+      },
+      "ambientLightLevel": 1,
+      "enemies": [
+        {
+          "type": "bandit",
+          "x": -6,
+          "z": -8
+        },
+        {
+          "type": "bandit",
+          "x": 10,
+          "z": -14
+        },
+        {
+          "type": "ghoul",
+          "x": 2,
+          "z": -23.5
+        },
+        {
+          "type": "bandit",
+          "x": -54.3,
+          "z": 64.8
+        },
+        {
+          "type": "ghoul",
+          "x": -23.1,
+          "z": 71.2
+        },
+        {
+          "type": "bandit",
+          "x": -63.2,
+          "z": -18
+        },
+        {
+          "type": "ghoul",
+          "x": -64.7,
+          "z": 20.5
+        },
+        {
+          "type": "bandit",
+          "x": -42.6,
+          "z": 70.7
+        },
+        {
+          "type": "ghoul",
+          "x": -64.9,
+          "z": 35.8
+        },
+        {
+          "type": "bandit",
+          "x": -48.5,
+          "z": 39.6
+        },
+        {
+          "type": "ghoul",
+          "x": 54.2,
+          "z": 74.5
+        }
+      ],
+      "props": [
+        {
+          "asset": "gravestoneObelisk",
+          "x": -10,
+          "z": 20,
+          "rotY": 0.3,
+          "scale": 1.6
+        },
+        {
+          "asset": "gravestoneObelisk",
+          "x": -13,
+          "z": 17,
+          "rotY": -0.2,
+          "scale": 1.4
+        },
+        {
+          "asset": "gravestoneObelisk",
+          "x": 12,
+          "z": 22,
+          "rotY": 1.1,
+          "scale": 1.5
+        },
+        {
+          "asset": "stoneCrossTilted",
+          "x": -5,
+          "z": 15,
+          "rotY": 0.7,
+          "scale": 1.6
+        },
+        {
+          "asset": "stoneCrossTilted",
+          "x": 8,
+          "z": 12,
+          "rotY": -1.2,
+          "scale": 1.3
+        },
+        {
+          "asset": "graveMound",
+          "x": 3,
+          "z": 24,
+          "rotY": 0,
+          "scale": 2.2
+        },
+        {
+          "asset": "graveMound",
+          "x": 15,
+          "z": 6,
+          "rotY": 0.4,
+          "scale": 1.8
+        },
+        {
+          "asset": "buriedCoffin",
+          "x": -18,
+          "z": 5,
+          "rotY": 0.9,
+          "scale": 1.7
+        },
+        {
+          "asset": "yewTree",
+          "x": 29.4,
+          "z": 1.3,
+          "rotY": 3.03,
+          "scale": 6.5
+        },
+        {
+          "asset": "lanternPost",
+          "x": -2,
+          "z": 30,
+          "rotY": 0,
+          "scale": 2.535
+        },
+        {
+          "asset": "lanternPost",
+          "x": 4,
+          "z": -2,
+          "rotY": 0,
+          "scale": 2.535
+        },
+        {
+          "asset": "picketFence",
+          "x": 15.4,
+          "z": 13.2,
+          "rotY": 0,
+          "scale": 1.4
+        },
+        {
+          "asset": "picketFence",
+          "x": 12.2,
+          "z": 12.2,
+          "rotY": 0,
+          "scale": 1.4
+        },
+        {
+          "asset": "picketFence",
+          "x": -19.1,
+          "z": 10.8,
+          "rotY": 1.57,
+          "scale": 1.4
+        },
+        {
+          "asset": "picketFence",
+          "x": -19.8,
+          "z": 7.6,
+          "rotY": 1.57,
+          "scale": 1.4
+        },
+        {
+          "asset": "picketFence",
+          "x": -20.8,
+          "z": 13.3,
+          "rotY": 1.57,
+          "scale": 1.4
+        },
+        {
+          "asset": "ironFenceSection",
+          "x": -5.6,
+          "z": 28.9,
+          "rotY": 3.97,
+          "scale": 1.35
+        },
+        {
+          "asset": "ironFenceSection",
+          "x": -7.6,
+          "z": 31.1,
+          "rotY": 3.97,
+          "scale": 1.35
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 17.2,
+          "z": -9,
+          "rotY": 5.46,
+          "scale": 1.37
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -24.4,
+          "z": 23,
+          "rotY": 0.73,
+          "scale": 1.34
+        },
+        {
+          "asset": "treeStump",
+          "x": 7.2,
+          "z": 18.4,
+          "rotY": 6.18,
+          "scale": 1.14
+        },
+        {
+          "asset": "treeStump",
+          "x": -8.4,
+          "z": 8.3,
+          "rotY": 5.43,
+          "scale": 1.21
+        },
+        {
+          "asset": "fallenLog",
+          "x": -13,
+          "z": -7.1,
+          "rotY": 0.8,
+          "scale": 1.52
+        },
+        {
+          "asset": "mourningStatue",
+          "x": -11.4,
+          "z": 12.7,
+          "rotY": 2.43,
+          "scale": 1.72
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 5.5,
+          "z": 8.5,
+          "rotY": 1.1,
+          "scale": 1.1
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -2.5,
+          "z": -6.5,
+          "rotY": 3.9,
+          "scale": 1.05
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 10.5,
+          "z": -14.5,
+          "rotY": 5.2,
+          "scale": 1.2
+        },
+        {
+          "asset": "treeStump",
+          "x": -15.5,
+          "z": 3.5,
+          "rotY": 2.2,
+          "scale": 1.15
+        },
+        {
+          "asset": "treeStump",
+          "x": 15.5,
+          "z": -2.5,
+          "rotY": 0.9,
+          "scale": 1.18
+        },
+        {
+          "asset": "graveMound",
+          "x": -4.5,
+          "z": -12.5,
+          "rotY": 0.6,
+          "scale": 1.6
+        },
+        {
+          "asset": "fallenLog",
+          "x": 12.5,
+          "z": 2.5,
+          "rotY": 2.4,
+          "scale": 1.45
+        },
+        {
+          "asset": "gravestoneObelisk",
+          "x": 16.5,
+          "z": 10.5,
+          "rotY": 0.8,
+          "scale": 1.3
+        },
+        {
+          "asset": "stoneCrossTilted",
+          "x": 18.5,
+          "z": 14.5,
+          "rotY": 2.1,
+          "scale": 1.25
+        },
+        {
+          "asset": "graveMound",
+          "x": 20.5,
+          "z": 11.5,
+          "rotY": 1.3,
+          "scale": 1.7
+        },
+        {
+          "asset": "gravestoneObelisk",
+          "x": -14.5,
+          "z": 20.5,
+          "rotY": 1.9,
+          "scale": 1.35
+        },
+        {
+          "asset": "graveMound",
+          "x": -17.5,
+          "z": 24.5,
+          "rotY": 2.4,
+          "scale": 1.55
+        },
+        {
+          "asset": "buriedCoffin",
+          "x": 6.5,
+          "z": 12.5,
+          "rotY": 0.4,
+          "scale": 1.5
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -20.5,
+          "z": -12.5,
+          "rotY": 4.4,
+          "scale": 1.15
+        },
+        {
+          "asset": "treeStump",
+          "x": 20.5,
+          "z": 2.5,
+          "rotY": 3.1,
+          "scale": 1.1
+        },
+        {
+          "asset": "lanternPost",
+          "x": 5.04,
+          "z": 62,
+          "rotY": 0,
+          "scale": 2.535
+        },
+        {
+          "asset": "lanternPost",
+          "x": -3.36,
+          "z": 51,
+          "rotY": 0,
+          "scale": 2.535
+        },
+        {
+          "asset": "lanternPost",
+          "x": 2.6,
+          "z": 39.5,
+          "rotY": 0,
+          "scale": 2.535
+        },
+        {
+          "asset": "yewTree",
+          "x": 10.09,
+          "y": 0,
+          "z": 39.59,
+          "rotY": 0.9,
+          "scale": 9.17
+        },
+        {
+          "asset": "yewTree",
+          "x": 13.43,
+          "y": 0,
+          "z": 36.39,
+          "rotY": 3.25,
+          "scale": 9.46
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 19.45,
+          "y": 0,
+          "z": 32.88,
+          "rotY": 1.91,
+          "scale": 10.41
+        },
+        {
+          "asset": "yewTree",
+          "x": 22.95,
+          "y": 0,
+          "z": 26.82,
+          "rotY": 4.36,
+          "scale": 9.16
+        },
+        {
+          "asset": "yewTree",
+          "x": 27.04,
+          "y": 0,
+          "z": 25.77,
+          "rotY": 4.36,
+          "scale": 9.65
+        },
+        {
+          "asset": "yewTree",
+          "x": 25.71,
+          "y": 0,
+          "z": 21.17,
+          "rotY": 5.3,
+          "scale": 8.52
+        },
+        {
+          "asset": "yewTree",
+          "x": 29.51,
+          "y": 0,
+          "z": 18.91,
+          "rotY": 4.3,
+          "scale": 9.7
+        },
+        {
+          "asset": "yewTree",
+          "x": 28.16,
+          "y": 0,
+          "z": 14.6,
+          "rotY": 0.28,
+          "scale": 9.64
+        },
+        {
+          "asset": "livingOak",
+          "x": 30.87,
+          "y": -1.57,
+          "z": 7.31,
+          "rotY": 4.33,
+          "scale": 9.82
+        },
+        {
+          "asset": "yewTree",
+          "x": 26.52,
+          "y": 0,
+          "z": -3.92,
+          "rotY": 3.01,
+          "scale": 9.9
+        },
+        {
+          "asset": "reachTreeA",
+          "x": 21.93,
+          "y": 0,
+          "z": -10.21,
+          "rotY": 5.88,
+          "scale": 9.87
+        },
+        {
+          "asset": "yewTree",
+          "x": 17.79,
+          "y": 0,
+          "z": -11.16,
+          "rotY": 2.92,
+          "scale": 9.73
+        },
+        {
+          "asset": "yewTree",
+          "x": -6.2,
+          "y": 0,
+          "z": -17.34,
+          "rotY": 1.52,
+          "scale": 10.05
+        },
+        {
+          "asset": "yewTree",
+          "x": -12.93,
+          "y": 0,
+          "z": -17.42,
+          "rotY": 5.83,
+          "scale": 10.75
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -14.29,
+          "y": 0,
+          "z": -12.52,
+          "rotY": 1.9,
+          "scale": 8.82
+        },
+        {
+          "asset": "yewTree",
+          "x": -24.43,
+          "y": 0,
+          "z": -8.01,
+          "rotY": 2.41,
+          "scale": 8.73
+        },
+        {
+          "asset": "reachTreeB",
+          "x": -24.57,
+          "y": 0,
+          "z": -3.33,
+          "rotY": 4.43,
+          "scale": 10.1
+        },
+        {
+          "asset": "yewTree",
+          "x": -26.77,
+          "y": 0,
+          "z": 2.16,
+          "rotY": 0.5,
+          "scale": 8.78
+        },
+        {
+          "asset": "yewTree",
+          "x": -27.54,
+          "y": 0,
+          "z": 6.47,
+          "rotY": 0.41,
+          "scale": 10.35
+        },
+        {
+          "asset": "livingOak",
+          "x": -29.75,
+          "y": -1.63,
+          "z": 10.41,
+          "rotY": 5.62,
+          "scale": 10.19
+        },
+        {
+          "asset": "livingOak",
+          "x": -28.27,
+          "y": -1.71,
+          "z": 16.41,
+          "rotY": 5.56,
+          "scale": 10.66
+        },
+        {
+          "asset": "livingOak",
+          "x": -29.82,
+          "y": -1.6,
+          "z": 20.75,
+          "rotY": 6.07,
+          "scale": 9.99
+        },
+        {
+          "asset": "livingOak",
+          "x": -26.92,
+          "y": -1.51,
+          "z": 24.25,
+          "rotY": 6.16,
+          "scale": 9.42
+        },
+        {
+          "asset": "livingOak",
+          "x": -26.15,
+          "y": -1.51,
+          "z": 28.48,
+          "rotY": 1.12,
+          "scale": 9.42
+        },
+        {
+          "asset": "yewTree",
+          "x": -21.42,
+          "y": 0,
+          "z": 29.64,
+          "rotY": 2.49,
+          "scale": 9.68
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -20.77,
+          "y": 0,
+          "z": 34.44,
+          "rotY": 1.53,
+          "scale": 9.91
+        },
+        {
+          "asset": "yewTree",
+          "x": -16.38,
+          "y": 0,
+          "z": 33.81,
+          "rotY": 5.21,
+          "scale": 8.51
+        },
+        {
+          "asset": "yewTree",
+          "x": -14.6,
+          "y": 0,
+          "z": 38.65,
+          "rotY": 4.31,
+          "scale": 9.54
+        },
+        {
+          "asset": "yewTree",
+          "x": -9.91,
+          "y": 0,
+          "z": 36.97,
+          "rotY": 1.14,
+          "scale": 9.72
+        },
+        {
+          "asset": "yewTree",
+          "x": 23.78,
+          "y": 0,
+          "z": 31,
+          "rotY": 4.33,
+          "scale": 8.81
+        },
+        {
+          "asset": "livingOak",
+          "x": 17.93,
+          "y": -1.69,
+          "z": 36.83,
+          "rotY": 0.95,
+          "scale": 10.54
+        },
+        {
+          "asset": "yewTree",
+          "x": -9.1,
+          "y": 0,
+          "z": 41.16,
+          "rotY": 2.5,
+          "scale": 8.98
+        },
+        {
+          "asset": "reachTreeC",
+          "x": 22.57,
+          "y": 0,
+          "z": -5.39,
+          "rotY": 4.2,
+          "scale": 10.43
+        },
+        {
+          "asset": "yewTree",
+          "x": -31.91,
+          "y": 0,
+          "z": 28.49,
+          "rotY": 6.17,
+          "scale": 10.74
+        },
+        {
+          "asset": "livingOak",
+          "x": 24.5,
+          "y": -1.41,
+          "z": 39.3,
+          "rotY": 3.87,
+          "scale": 8.8
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -28.8,
+          "y": 0,
+          "z": -6.55,
+          "rotY": 0.83,
+          "scale": 8.67
+        },
+        {
+          "asset": "livingOak",
+          "x": -33.27,
+          "y": -1.53,
+          "z": 14.18,
+          "rotY": 2.82,
+          "scale": 9.58
+        },
+        {
+          "asset": "livingOak",
+          "x": -17.59,
+          "y": -1.56,
+          "z": -20.61,
+          "rotY": 6.06,
+          "scale": 9.72
+        },
+        {
+          "asset": "livingOak",
+          "x": -33.41,
+          "y": -1.43,
+          "z": 6.92,
+          "rotY": 6.09,
+          "scale": 8.92
+        },
+        {
+          "asset": "yewTree",
+          "x": 18.49,
+          "y": 0,
+          "z": -20.26,
+          "rotY": 0.73,
+          "scale": 9.43
+        },
+        {
+          "asset": "yewTree",
+          "x": -15.56,
+          "y": 0,
+          "z": 44.39,
+          "rotY": 4.45,
+          "scale": 9.08
+        },
+        {
+          "asset": "reachTreeA",
+          "x": -21.84,
+          "y": 0,
+          "z": 41.43,
+          "rotY": 3.7,
+          "scale": 8.53
+        },
+        {
+          "asset": "reachTreeA",
+          "x": 7.16,
+          "y": 0,
+          "z": 38,
+          "rotY": 0.6,
+          "scale": 8.9
+        },
+        {
+          "asset": "reachTreeB",
+          "x": -12.57,
+          "y": 0,
+          "z": 42.5,
+          "rotY": 1.07,
+          "scale": 9.4
+        },
+        {
+          "asset": "reachTreeC",
+          "x": 7.29,
+          "y": 0,
+          "z": 49.5,
+          "rotY": 1.54,
+          "scale": 9.1
+        },
+        {
+          "asset": "reachTreeA",
+          "x": -6.82,
+          "y": 0,
+          "z": 56.5,
+          "rotY": 2.01,
+          "scale": 8.9
+        },
+        {
+          "asset": "reachTreeB",
+          "x": 8.44,
+          "y": 0,
+          "z": 67.5,
+          "rotY": 2.48,
+          "scale": 9.4
+        },
+        {
+          "asset": "reachTreeC",
+          "x": -7.29,
+          "y": 0,
+          "z": 66.5,
+          "rotY": 2.95,
+          "scale": 9.1
+        },
+        {
+          "asset": "yewTree",
+          "x": 12.06,
+          "y": 0,
+          "z": 44.64,
+          "rotY": 1.05,
+          "scale": 10.24
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 27.83,
+          "y": 0,
+          "z": -10.74,
+          "rotY": 5.68,
+          "scale": 8.65
+        },
+        {
+          "asset": "yewTree",
+          "x": 27.72,
+          "y": 0,
+          "z": 33.52,
+          "rotY": 5.85,
+          "scale": 9.5
+        },
+        {
+          "asset": "yewTree",
+          "x": -28.62,
+          "y": 0,
+          "z": -13.03,
+          "rotY": 4.86,
+          "scale": 8.55
+        },
+        {
+          "asset": "yewTree",
+          "x": 6.93,
+          "y": 0,
+          "z": 82.72,
+          "rotY": 1.45,
+          "scale": 10.21
+        },
+        {
+          "asset": "yewTree",
+          "x": -10.12,
+          "y": 0,
+          "z": 77.36,
+          "rotY": 3.54,
+          "scale": 10.09
+        },
+        {
+          "asset": "yewTree",
+          "x": -8.48,
+          "y": 0,
+          "z": 70.95,
+          "rotY": 3.89,
+          "scale": 10.29
+        },
+        {
+          "asset": "yewTree",
+          "x": 8.55,
+          "y": 0,
+          "z": 73.01,
+          "rotY": 0.6,
+          "scale": 9.88
+        },
+        {
+          "asset": "youngAsh",
+          "x": 8.91,
+          "y": -0.95,
+          "z": 64.05,
+          "rotY": 1.62,
+          "scale": 9.51
+        },
+        {
+          "asset": "youngAsh",
+          "x": -7.85,
+          "y": -0.9,
+          "z": 59.98,
+          "rotY": 4.1,
+          "scale": 8.95
+        },
+        {
+          "asset": "yewTree",
+          "x": 10.33,
+          "y": 0,
+          "z": 54.25,
+          "rotY": 1.08,
+          "scale": 9.79
+        },
+        {
+          "asset": "yewTree",
+          "x": -9.62,
+          "y": 0,
+          "z": 47,
+          "rotY": 2.1,
+          "scale": 9.98
+        },
+        {
+          "asset": "yewTree",
+          "x": 8.6,
+          "y": 0,
+          "z": 33.51,
+          "rotY": 4.98,
+          "scale": 10.12
+        },
+        {
+          "asset": "yewTree",
+          "x": 57.04,
+          "y": 0,
+          "z": -15.79,
+          "rotY": 2.9,
+          "scale": 9.27
+        },
+        {
+          "asset": "yewTree",
+          "x": -59.24,
+          "y": 0,
+          "z": -0.74,
+          "rotY": 2.93,
+          "scale": 9.73
+        },
+        {
+          "asset": "yewTree",
+          "x": 60.96,
+          "y": 0,
+          "z": 56.5,
+          "rotY": 6.11,
+          "scale": 9.8
+        },
+        {
+          "asset": "yewTree",
+          "x": -57.78,
+          "y": 0,
+          "z": 59.64,
+          "rotY": 2.87,
+          "scale": 9.29
+        },
+        {
+          "asset": "yewTree",
+          "x": -41.08,
+          "y": 0,
+          "z": 21.82,
+          "rotY": 4.32,
+          "scale": 9.33
+        },
+        {
+          "asset": "yewTree",
+          "x": 60.1,
+          "y": 0,
+          "z": 31.08,
+          "rotY": 1.4,
+          "scale": 9.58
+        },
+        {
+          "asset": "yewTree",
+          "x": 16.57,
+          "y": 0,
+          "z": 73.83,
+          "rotY": 1.37,
+          "scale": 9.7
+        },
+        {
+          "asset": "yewTree",
+          "x": -52.83,
+          "y": 0,
+          "z": 10.61,
+          "rotY": 5.48,
+          "scale": 9.2
+        },
+        {
+          "asset": "yewTree",
+          "x": 32.79,
+          "y": 0,
+          "z": 43.69,
+          "rotY": 1.16,
+          "scale": 9.12
+        },
+        {
+          "asset": "yewTree",
+          "x": 70.05,
+          "y": 0,
+          "z": 25.87,
+          "rotY": 3.84,
+          "scale": 10.48
+        },
+        {
+          "asset": "yewTree",
+          "x": 81.14,
+          "y": 0,
+          "z": -1.12,
+          "rotY": 0.5,
+          "scale": 9.25
+        },
+        {
+          "asset": "yewTree",
+          "x": 65.62,
+          "y": 0,
+          "z": -18.16,
+          "rotY": 2.96,
+          "scale": 8.96
+        },
+        {
+          "asset": "yewTree",
+          "x": -52.77,
+          "y": 0,
+          "z": 24.81,
+          "rotY": 3.24,
+          "scale": 10.59
+        },
+        {
+          "asset": "yewTree",
+          "x": -67.03,
+          "y": 0,
+          "z": -13.59,
+          "rotY": 5.4,
+          "scale": 10.35
+        },
+        {
+          "asset": "yewTree",
+          "x": 45.49,
+          "y": 0,
+          "z": 69.52,
+          "rotY": 5.29,
+          "scale": 9.06
+        },
+        {
+          "asset": "yewTree",
+          "x": 63.12,
+          "y": 0,
+          "z": -7.81,
+          "rotY": 4.66,
+          "scale": 10.46
+        },
+        {
+          "asset": "yewTree",
+          "x": 59.89,
+          "y": 0,
+          "z": 40.01,
+          "rotY": 1.88,
+          "scale": 9.53
+        },
+        {
+          "asset": "yewTree",
+          "x": -67.76,
+          "y": 0,
+          "z": 40.3,
+          "rotY": 0.76,
+          "scale": 10.22
+        },
+        {
+          "asset": "yewTree",
+          "x": -70.13,
+          "y": 0,
+          "z": 1.49,
+          "rotY": 0.38,
+          "scale": 9.85
+        },
+        {
+          "asset": "yewTree",
+          "x": -36.08,
+          "y": 0,
+          "z": 64.13,
+          "rotY": 0.08,
+          "scale": 8.52
+        },
+        {
+          "asset": "yewTree",
+          "x": 69.01,
+          "y": 0,
+          "z": 9.89,
+          "rotY": 5.47,
+          "scale": 10.26
+        },
+        {
+          "asset": "yewTree",
+          "x": -78.76,
+          "y": 0,
+          "z": 2.67,
+          "rotY": 3.41,
+          "scale": 10.39
+        },
+        {
+          "asset": "yewTree",
+          "x": -39.99,
+          "y": 0,
+          "z": 41.03,
+          "rotY": 1.04,
+          "scale": 9.43
+        },
+        {
+          "asset": "yewTree",
+          "x": -17.37,
+          "y": 0,
+          "z": 54.75,
+          "rotY": 2.74,
+          "scale": 8.35
+        },
+        {
+          "asset": "yewTree",
+          "x": -32.98,
+          "y": 0,
+          "z": 74.52,
+          "rotY": 3.1,
+          "scale": 9.64
+        },
+        {
+          "asset": "yewTree",
+          "x": 67.57,
+          "y": 0,
+          "z": 1.41,
+          "rotY": 3.78,
+          "scale": 8.71
+        },
+        {
+          "asset": "deadTree",
+          "x": 50.59,
+          "y": 0,
+          "z": 51.57,
+          "rotY": 6.05,
+          "scale": 8.18
+        },
+        {
+          "asset": "deadTree",
+          "x": 50.76,
+          "y": 0,
+          "z": 5.13,
+          "rotY": 5.28,
+          "scale": 8.5
+        },
+        {
+          "asset": "deadTree",
+          "x": 47.13,
+          "y": 0,
+          "z": -7.95,
+          "rotY": 3.05,
+          "scale": 8.41
+        },
+        {
+          "asset": "deadTree",
+          "x": -42.33,
+          "y": 0,
+          "z": -9.63,
+          "rotY": 5.02,
+          "scale": 8.95
+        }
+      ],
+      "nodes": [
+        {
+          "type": "herbBundle",
+          "x": 59.8,
+          "z": 23.1
+        },
+        {
+          "type": "herbBundle",
+          "x": 13.5,
+          "z": 58.4
+        },
+        {
+          "type": "herbBundle",
+          "x": -54.7,
+          "z": -15.4
+        },
+        {
+          "type": "herbBundle",
+          "x": -54.5,
+          "z": 44.3
+        },
+        {
+          "type": "herbBundle",
+          "x": 21.3,
+          "z": 71
+        },
+        {
+          "type": "herbBundle",
+          "x": 39.8,
+          "z": 43.1
+        },
+        {
+          "type": "deadwoodPile",
+          "x": 69.4,
+          "z": 16.4
+        },
+        {
+          "type": "deadwoodPile",
+          "x": 70.8,
+          "z": -3.8
+        },
+        {
+          "type": "deadwoodPile",
+          "x": -34.3,
+          "z": 42
+        },
+        {
+          "type": "deadwoodPile",
+          "x": -40,
+          "z": 4.6
+        },
+        {
+          "type": "mushroomCluster",
+          "x": -37.1,
+          "z": 19.9
+        },
+        {
+          "type": "mushroomCluster",
+          "x": 37.3,
+          "z": -4
+        },
+        {
+          "type": "mushroomCluster",
+          "x": -29.7,
+          "z": 32
+        },
+        {
+          "type": "mushroomCluster",
+          "x": 20.1,
+          "z": 42.6
+        }
+      ]
+    },
+    "regionB": {
+      "id": "darkwood_edge",
+      "name": "Darkwood Edge",
+      "spawn": {
+        "x": 0,
+        "z": -45
+      },
+      "gravityY": -22,
+      "fogColor": 7304311,
+      "fogDensity": 0.024,
+      "ambientLightLevel": 0.55,
+      "enemies": [
+        {
+          "type": "ghoul",
+          "x": -8,
+          "z": -38
+        },
+        {
+          "type": "ghoul",
+          "x": 9,
+          "z": -50
+        },
+        {
+          "type": "bandit",
+          "x": 0,
+          "z": -60
+        }
+      ],
+      "props": [
+        {
+          "asset": "livingOak",
+          "y": -1.28,
+          "x": 6.2,
+          "z": -46.4,
+          "rotY": 0.44,
+          "scale": 8
+        },
+        {
+          "asset": "reachTreeB",
+          "x": -31.2,
+          "z": -50.3,
+          "rotY": 3.15,
+          "scale": 8.6
+        },
+        {
+          "asset": "livingOak",
+          "y": -1.28,
+          "x": 25.2,
+          "z": -73.8,
+          "rotY": 2.69,
+          "scale": 8
+        },
+        {
+          "asset": "livingOak",
+          "y": -1.35,
+          "x": -31.1,
+          "z": -68.7,
+          "rotY": 5.13,
+          "scale": 8.43
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 19,
+          "z": -54.7,
+          "rotY": 4.18,
+          "scale": 8.28
+        },
+        {
+          "asset": "reachTreeC",
+          "x": -10.9,
+          "z": -55.8,
+          "rotY": 4.43,
+          "scale": 10.43
+        },
+        {
+          "asset": "livingOak",
+          "y": -1.44,
+          "x": -22.3,
+          "z": -59.2,
+          "rotY": 1.82,
+          "scale": 9
+        },
+        {
+          "asset": "deadTree",
+          "x": 35.5,
+          "z": -52.1,
+          "rotY": 2.09,
+          "scale": 9.85
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -18.1,
+          "z": -35.6,
+          "rotY": 0.99,
+          "scale": 8
+        },
+        {
+          "asset": "deadTree",
+          "x": -9.1,
+          "z": -35.8,
+          "rotY": 2.13,
+          "scale": 8
+        },
+        {
+          "asset": "yewTree",
+          "x": 21.9,
+          "z": -55.6,
+          "rotY": 5.57,
+          "scale": 8.38
+        },
+        {
+          "asset": "deadTree",
+          "x": 28.8,
+          "z": -55.3,
+          "rotY": 0.33,
+          "scale": 8
+        },
+        {
+          "asset": "yewTree",
+          "x": -31.3,
+          "z": -43.3,
+          "rotY": 3.91,
+          "scale": 10.4
+        },
+        {
+          "asset": "deadTree",
+          "x": 31.4,
+          "z": -48.7,
+          "rotY": 0.61,
+          "scale": 8
+        },
+        {
+          "asset": "yewTree",
+          "x": 19.4,
+          "z": -66.5,
+          "rotY": 1.34,
+          "scale": 9.18
+        },
+        {
+          "asset": "yewTree",
+          "x": -23,
+          "z": -47.8,
+          "rotY": 0.13,
+          "scale": 8.45
+        },
+        {
+          "asset": "reachTreeA",
+          "x": -29.1,
+          "z": -72.5,
+          "rotY": 4.72,
+          "scale": 8
+        },
+        {
+          "asset": "yewTree",
+          "x": 13.4,
+          "z": -70.9,
+          "rotY": 4.67,
+          "scale": 9.43
+        },
+        {
+          "asset": "deadTree",
+          "x": -20.5,
+          "z": -42.5,
+          "rotY": 4.19,
+          "scale": 8.05
+        },
+        {
+          "asset": "livingOak",
+          "y": -1.28,
+          "x": -23,
+          "z": -39.2,
+          "rotY": 5.43,
+          "scale": 8
+        },
+        {
+          "asset": "yewTree",
+          "x": -37.4,
+          "z": -47.4,
+          "rotY": 3.99,
+          "scale": 8.12
+        },
+        {
+          "asset": "livingOak",
+          "y": -1.28,
+          "x": 23.5,
+          "z": -37.4,
+          "rotY": 4.81,
+          "scale": 8
+        },
+        {
+          "asset": "deadTree",
+          "x": 36.4,
+          "z": -37.1,
+          "rotY": 3.3,
+          "scale": 8
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -7.4,
+          "z": -41.5,
+          "rotY": 5.92,
+          "scale": 10.02
+        },
+        {
+          "asset": "yewTree",
+          "x": 27.7,
+          "z": -49.3,
+          "rotY": 2.97,
+          "scale": 9.75
+        },
+        {
+          "asset": "yewTree",
+          "x": 24,
+          "z": -61.4,
+          "rotY": 3.8,
+          "scale": 9.7
+        },
+        {
+          "asset": "yewTree",
+          "x": 7.8,
+          "z": -38.4,
+          "rotY": 2.24,
+          "scale": 8
+        },
+        {
+          "asset": "yewTree",
+          "x": 15.1,
+          "z": -49.5,
+          "rotY": 4.85,
+          "scale": 7.45
+        },
+        {
+          "asset": "deadTree",
+          "x": -31.1,
+          "z": -74.8,
+          "rotY": 0.61,
+          "scale": 8.68
+        },
+        {
+          "asset": "livingOak",
+          "y": -1.28,
+          "x": -22.9,
+          "z": -71.1,
+          "rotY": 0.72,
+          "scale": 8
+        },
+        {
+          "asset": "reachTreeB",
+          "x": 29.8,
+          "z": -76.9,
+          "rotY": 0.5,
+          "scale": 9.68
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -28.4,
+          "z": -79.9,
+          "rotY": 4.96,
+          "scale": 9.8
+        },
+        {
+          "asset": "deadTree",
+          "x": -16,
+          "z": -76.7,
+          "rotY": 3.09,
+          "scale": 9.45
+        },
+        {
+          "asset": "churchArchway",
+          "x": 8,
+          "z": -58,
+          "rotY": 0.9,
+          "scale": 2.2
+        },
+        {
+          "asset": "churchCornerButtress",
+          "x": -14,
+          "z": -62,
+          "rotY": 0.3,
+          "scale": 2
+        },
+        {
+          "asset": "churchPewBroken",
+          "x": 16,
+          "z": -52,
+          "rotY": -0.7,
+          "scale": 1.8
+        },
+        {
+          "asset": "rubblePile",
+          "x": -6,
+          "z": -48,
+          "rotY": 0,
+          "scale": 1.9
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 32.3,
+          "z": -55.2,
+          "rotY": 1.89,
+          "scale": 1.33
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 17.1,
+          "z": -52.8,
+          "rotY": 4.82,
+          "scale": 0.9
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -27.1,
+          "z": -69.5,
+          "rotY": 2.43,
+          "scale": 0.95
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 32.2,
+          "z": -52.2,
+          "rotY": 6.24,
+          "scale": 1.01
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 11,
+          "z": -50.6,
+          "rotY": 3.81,
+          "scale": 1.57
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 25,
+          "z": -64.4,
+          "rotY": 2.36,
+          "scale": 1.46
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -23,
+          "z": -51.6,
+          "rotY": 2.49,
+          "scale": 0.91
+        },
+        {
+          "asset": "fallenLog",
+          "x": 28.2,
+          "z": -59,
+          "rotY": 0,
+          "scale": 1.34
+        },
+        {
+          "asset": "fallenLog",
+          "x": -28.6,
+          "z": -63.7,
+          "rotY": 1.57,
+          "scale": 1.61
+        },
+        {
+          "asset": "fallenLog",
+          "x": -29.1,
+          "z": -45.6,
+          "rotY": 1.57,
+          "scale": 1.58
+        },
+        {
+          "asset": "fallenLog",
+          "x": -10.1,
+          "z": -62.1,
+          "rotY": 3.14,
+          "scale": 1.59
+        },
+        {
+          "asset": "treeStump",
+          "x": 13.4,
+          "z": -58.7,
+          "rotY": 0.72,
+          "scale": 1.43
+        },
+        {
+          "asset": "treeStump",
+          "x": -11.1,
+          "z": -44.1,
+          "rotY": 3.43,
+          "scale": 1.04
+        },
+        {
+          "asset": "treeStump",
+          "x": 13,
+          "z": -55.5,
+          "rotY": 5.02,
+          "scale": 1.23
+        },
+        {
+          "asset": "treeStump",
+          "x": -25.4,
+          "z": -46.9,
+          "rotY": 1.05,
+          "scale": 1.24
+        },
+        {
+          "asset": "cemeteryGate",
+          "x": 25.8,
+          "z": -42,
+          "rotY": 0,
+          "scale": 1.62
+        },
+        {
+          "asset": "cemeteryGate",
+          "x": 20.1,
+          "z": -50.4,
+          "rotY": 0,
+          "scale": 1.62
+        },
+        {
+          "asset": "picketFence",
+          "x": 22.1,
+          "z": -53,
+          "rotY": 1.57,
+          "scale": 1.4
+        },
+        {
+          "asset": "picketFence",
+          "x": -27.4,
+          "z": -51.6,
+          "rotY": 1.57,
+          "scale": 1.4
+        },
+        {
+          "asset": "gravestoneObelisk",
+          "x": 13.1,
+          "z": -41.5,
+          "rotY": 3.73,
+          "scale": 1.38
+        },
+        {
+          "asset": "gravestoneObelisk",
+          "x": 20.1,
+          "z": -40,
+          "rotY": 0.14,
+          "scale": 1.38
+        },
+        {
+          "asset": "stoneCrossTilted",
+          "x": -13.5,
+          "z": -36.6,
+          "rotY": 5.5,
+          "scale": 1.22
+        },
+        {
+          "asset": "stoneCrossTilted",
+          "x": 18,
+          "z": -43.1,
+          "rotY": 6.16,
+          "scale": 1.6
+        },
+        {
+          "asset": "banditCampfire",
+          "x": 2.5,
+          "z": -52,
+          "rotY": 0,
+          "scale": 1.8
+        },
+        {
+          "asset": "lanternWaymarker",
+          "x": -6.5,
+          "z": -47,
+          "rotY": 1.1,
+          "scale": 1.9
+        }
+      ],
+      "nodes": [
+        {
+          "type": "graveMoss",
+          "x": -32.9,
+          "z": -39.1
+        },
+        {
+          "type": "graveMoss",
+          "x": 38.3,
+          "z": -57.4
+        },
+        {
+          "type": "graveMoss",
+          "x": -33.7,
+          "z": -62.2
+        },
+        {
+          "type": "graveMoss",
+          "x": -14.4,
+          "z": -66.6
+        },
+        {
+          "type": "graveMoss",
+          "x": -12.7,
+          "z": -48.1
+        },
+        {
+          "type": "bonePile",
+          "x": 31.7,
+          "z": -63.2
+        },
+        {
+          "type": "bonePile",
+          "x": -41.7,
+          "z": -54.4
+        },
+        {
+          "type": "bonePile",
+          "x": -17,
+          "z": -53.1
+        },
+        {
+          "type": "bonePile",
+          "x": -2.7,
+          "z": -52.4
+        }
+      ]
+    },
+    "regionC": {
+      "id": "forest_of_the_old_king",
+      "name": "Forest of the Old King",
+      "center": {
+        "x": 0,
+        "z": -366
+      },
+      "groundRadius": 280,
+      "groundY": -0.05,
+      "groundColor": 1712406,
+      "groundColor2": 2631194,
+      "groundSeed": 1662061217,
+      "scatterOverrides": {
+        "clear": {
+          "spawnM": 14,
+          "floraMaxH": 6
+        },
+        "keepOut": [
+          {
+            "regionId": "forest_of_the_old_king",
+            "x": 0,
+            "z": -366,
+            "rx": 30,
+            "rz": 30
+          },
+          {
+            "regionId": "forest_of_the_old_king",
+            "x": 0,
+            "z": -596,
+            "rx": 18,
+            "rz": 18
+          },
+          {
+            "regionId": "forest_of_the_old_king",
+            "x": 240,
+            "z": -366,
+            "rx": 18,
+            "rz": 18
+          },
+          {
+            "regionId": "forest_of_the_old_king",
+            "x": -240,
+            "z": -366,
+            "rx": 18,
+            "rz": 18
+          },
+          {
+            "regionId": "forest_of_the_old_king",
+            "x": -136,
+            "z": -219,
+            "rx": 22,
+            "rz": 18
+          }
+        ],
+        "treesExtra": {
+          "targetCount": {
+            "forest_of_the_old_king": 0
+          }
+        },
+        "bushes": {
+          "assets": [
+            [
+              "bramble",
+              1,
+              1.6,
+              2.4
+            ],
+            [
+              "bushB",
+              2,
+              1,
+              1.6
+            ],
+            [
+              "bushA",
+              2,
+              0.9,
+              1.4
+            ]
+          ],
+          "atTreeRing": {
+            "count": [
+              2,
+              4
+            ],
+            "radiusFrac": [
+              1.1,
+              1.8
+            ],
+            "pathM": 6,
+            "assets": [
+              [
+                "bushA",
+                1,
+                1.2,
+                2
+              ],
+              [
+                "bushB",
+                1,
+                1.4,
+                2.4
+              ],
+              [
+                "whBushSnare",
+                2,
+                1.4,
+                2.2
+              ]
+            ]
+          },
+          "freeBushes": 33
+        },
+        "grass": {
+          "count": 261
+        },
+        "groundLayers": [
+          {
+            "id": "tuftColonies",
+            "asset": "grassTuft",
+            "clusters": 29,
+            "perCluster": [
+              3,
+              8
+            ],
+            "spreadM": 5,
+            "height": [
+              0.5,
+              0.95
+            ],
+            "nearTreeFrac": 0.5,
+            "treeBandFrac": [
+              2.2,
+              4
+            ]
+          }
+        ]
+      },
+      "spawn": {
+        "x": 0,
+        "z": -96
+      },
+      "gravityY": -22,
+      "fogColor": 5857883,
+      "fogDensity": 0.033,
+      "ambientLightLevel": 0.5,
+      "door": {
+        "planeZ": -86,
+        "doorX": 0,
+        "doorHalfWidth": 4,
+        "suspendDepthM": 3,
+        "interactM": 6,
+        "hintM": 12,
+        "arch": {
+          "asset": "b3Gate",
+          "x": 0,
+          "z": -86,
+          "rotY": 3.141592653589793,
+          "fitOpening": 5.2,
+          "openingFrac": 0.3428,
+          "openingCenterFrac": 0.0059,
+          "depthScale": 0.45
+        },
+        "wallGapPadM": 0,
+        "text": {
+          "locked": "Rest at a camp first - the forest beyond still sleeps.",
+          "prompt": "E - Examine the arch",
+          "hint": "Enter the Forest of the Old King",
+          "hintLocked": "The forest beyond still sleeps",
+          "hintBack": "Back to the Darkwood"
+        }
+      },
+      "notchText": {
+        "interactM": 5,
+        "locked": "The road beyond is lost. For now.",
+        "prompt": "E - Examine the road"
+      },
+      "enemies": [
+        {
+          "type": "wolf",
+          "x": 190,
+          "z": -318,
+          "packId": "east",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": 188.8,
+          "z": -324.2,
+          "packId": "east",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": 193.5,
+          "z": -329.7,
+          "packId": "east",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": 189.3,
+          "z": -333.9,
+          "packId": "east",
+          "waypointPhase": 3
+        },
+        {
+          "type": "wolf",
+          "x": -190,
+          "z": -420,
+          "packId": "west",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": -184.3,
+          "z": -417.2,
+          "packId": "west",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": -182.9,
+          "z": -410.1,
+          "packId": "west",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": -175.9,
+          "z": -408.7,
+          "packId": "west",
+          "waypointPhase": 3
+        },
+        {
+          "type": "wolf",
+          "x": -25,
+          "z": -520,
+          "packId": "north",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": -18.8,
+          "z": -521.2,
+          "packId": "north",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": -13.4,
+          "z": -516.4,
+          "packId": "north",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": -6.9,
+          "z": -519.6,
+          "packId": "north",
+          "waypointPhase": 3
+        },
+        {
+          "type": "bandit",
+          "x": -103.9,
+          "z": -469.5
+        },
+        {
+          "type": "bandit",
+          "x": -108.7,
+          "z": -470.1
+        },
+        {
+          "type": "bandit",
+          "x": -106.1,
+          "z": -468.7
+        },
+        {
+          "type": "bandit",
+          "x": 120.2,
+          "z": -446
+        },
+        {
+          "type": "bandit",
+          "x": 115.4,
+          "z": -446.6
+        },
+        {
+          "type": "bandit",
+          "x": 118,
+          "z": -445.2
+        },
+        {
+          "type": "bandit",
+          "x": -205.6,
+          "z": -243.4
+        },
+        {
+          "type": "bandit",
+          "x": -210.4,
+          "z": -244
+        },
+        {
+          "type": "bandit",
+          "x": -207.8,
+          "z": -242.6
+        },
+        {
+          "type": "bandit",
+          "x": 146.4,
+          "z": -534.3
+        },
+        {
+          "type": "bandit",
+          "x": 141.6,
+          "z": -534.9
+        },
+        {
+          "type": "bandit",
+          "x": 144.2,
+          "z": -533.5
+        },
+        {
+          "type": "wolf",
+          "x": -89.9,
+          "z": -336.7,
+          "packId": "sw",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": -78.4,
+          "z": -328,
+          "packId": "sw",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": -70.9,
+          "z": -290.5,
+          "packId": "sw",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": -86.6,
+          "z": -279.6,
+          "packId": "sw",
+          "waypointPhase": 3
+        },
+        {
+          "type": "wolf",
+          "x": 79.6,
+          "z": -186.8,
+          "packId": "se",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": 115.2,
+          "z": -158.5,
+          "packId": "se",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": 110.4,
+          "z": -142.3,
+          "packId": "se",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": 108.8,
+          "z": -127.6,
+          "packId": "se",
+          "waypointPhase": 3
+        },
+        {
+          "type": "wolf",
+          "x": 62.5,
+          "z": -249.5,
+          "packId": "ss",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": 73.9,
+          "z": -256.9,
+          "packId": "ss",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": 92.1,
+          "z": -203.5,
+          "packId": "ss",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": 74.8,
+          "z": -188.5,
+          "packId": "ss",
+          "waypointPhase": 3
+        },
+        {
+          "type": "wolf",
+          "x": 223.3,
+          "z": -482.5,
+          "packId": "nw2",
+          "waypointPhase": 0
+        },
+        {
+          "type": "wolf",
+          "x": 236.3,
+          "z": -473.8,
+          "packId": "nw2",
+          "waypointPhase": 1
+        },
+        {
+          "type": "wolf",
+          "x": 240.9,
+          "z": -461,
+          "packId": "nw2",
+          "waypointPhase": 2
+        },
+        {
+          "type": "wolf",
+          "x": 229.4,
+          "z": -440,
+          "packId": "nw2",
+          "waypointPhase": 3
+        },
+        {
+          "type": "bandit",
+          "x": -53.6,
+          "z": -178.3
+        },
+        {
+          "type": "bandit",
+          "x": -67.7,
+          "z": -179.6
+        },
+        {
+          "type": "bandit",
+          "x": -66,
+          "z": -196.4
+        },
+        {
+          "type": "bandit",
+          "x": 85,
+          "z": -240.6
+        },
+        {
+          "type": "bandit",
+          "x": 102.7,
+          "z": -242.4
+        },
+        {
+          "type": "bandit",
+          "x": 100.1,
+          "z": -225.1
+        },
+        {
+          "type": "bandit",
+          "x": -130.5,
+          "z": -500.5
+        },
+        {
+          "type": "bandit",
+          "x": -144.2,
+          "z": -496.9
+        },
+        {
+          "type": "bandit",
+          "x": -151.3,
+          "z": -510.1
+        },
+        {
+          "type": "bandit",
+          "x": -138.1,
+          "z": -516.8
+        }
+      ],
+      "propCullM": 274.5,
+      "cullDistanceM": 170,
+      "cullShowFrac": 0.92,
+      "scatterCellM": 90,
+      "scatterCullM": 120,
+      "visualGroundMinRadius": 400,
+      "terrain": {
+        "enabled": true,
+        "S": 140,
+        "plane": 560,
+        "seed": 1337,
+        "baseWavelength": 45,
+        "octaves": 4,
+        "lacunarity": 2,
+        "gain": 0.45,
+        "hMax": 5,
+        "nLo": 0.22,
+        "nHi": 0.79,
+        "pocket": {
+          "x": 0,
+          "z": -96,
+          "r": 25,
+          "blend": 20,
+          "h": 0.4
+        },
+        "stonePad": {
+          "x": 0,
+          "z": -366,
+          "r": 28,
+          "blend": 16,
+          "h": null
+        },
+        "rim": {
+          "from": 240,
+          "to": 280,
+          "blend": 30,
+          "peakH": 34,
+          "cliffSlopeDeg": 38,
+          "footJitterM": 6,
+          "lumpWavelength": 70,
+          "lumpSalt": 7919,
+          "edgeFadeM": 15,
+          "stoneFromH": 6,
+          "stoneToH": 16,
+          "notchShoulderM": 8,
+          "notchHoldM": 0,
+          "notches": [
+            {
+              "id": "north",
+              "x": 0,
+              "z": -596,
+              "halfWidth": 10,
+              "blocker": true
+            },
+            {
+              "id": "east",
+              "x": 240,
+              "z": -366,
+              "halfWidth": 10,
+              "blocker": true
+            },
+            {
+              "id": "west",
+              "x": -240,
+              "z": -366,
+              "halfWidth": 10,
+              "blocker": true
+            },
+            {
+              "id": "door",
+              "x": 0,
+              "z": -86,
+              "halfWidth": 30,
+              "shoulder": 18
+            }
+          ]
+        },
+        "climbFactor": 0.6,
+        "stepSlopeCapDeg": 45,
+        "camMinAboveGround": 0.8,
+        "propFootR": 1.2,
+        "meshColorMoss": 2901028,
+        "meshColorStone": 9206622,
+        "skirtColor": 9206622,
+        "debugAssert": false,
+        "gridHash": "7ca52bd3"
+      },
+      "props": [
+        {
+          "asset": "lanternPost",
+          "x": 3,
+          "z": -99,
+          "rotY": 0,
+          "scale": 2.535
+        },
+        {
+          "asset": "mourningStatue",
+          "x": 0,
+          "z": -366,
+          "rotY": 0,
+          "scale": 11
+        },
+        {
+          "asset": "cemeteryGate",
+          "x": -8,
+          "z": -342,
+          "rotY": 0.3,
+          "scale": 5.5
+        },
+        {
+          "asset": "cemeteryGate",
+          "x": 8,
+          "z": -342,
+          "rotY": -0.3,
+          "scale": 5.5
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 10.3,
+          "z": -353.7,
+          "rotY": 0.6,
+          "scale": 2.1
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 15.5,
+          "z": -361.9,
+          "rotY": 2.1,
+          "scale": 1.6
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 15,
+          "z": -371.5,
+          "rotY": 4.4,
+          "scale": 2.4
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 9.2,
+          "z": -379.1,
+          "rotY": 1.2,
+          "scale": 1.8
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 0,
+          "z": -382,
+          "rotY": 3.3,
+          "scale": 2.5
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -9.2,
+          "z": -379.1,
+          "rotY": 5.5,
+          "scale": 1.7
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -15,
+          "z": -371.5,
+          "rotY": 0.2,
+          "scale": 2.2
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -15.5,
+          "z": -361.9,
+          "rotY": 2.8,
+          "scale": 1.5
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -10.3,
+          "z": -353.7,
+          "rotY": 4.9,
+          "scale": 2
+        },
+        {
+          "asset": "yewTree",
+          "x": -28,
+          "z": -296,
+          "rotY": 5.91,
+          "scale": 29
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 30,
+          "z": -238,
+          "rotY": 0.19,
+          "scale": 28.41
+        },
+        {
+          "asset": "yewTree",
+          "x": -26,
+          "z": -178,
+          "rotY": 4.65,
+          "scale": 28.21
+        },
+        {
+          "asset": "yewTree",
+          "x": 24,
+          "z": -128,
+          "rotY": 1.94,
+          "scale": 28.73
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -56,
+          "z": -404,
+          "rotY": 5.65,
+          "scale": 29.93
+        },
+        {
+          "asset": "yewTree",
+          "x": 56,
+          "z": -404,
+          "rotY": 1.91,
+          "scale": 28.67
+        },
+        {
+          "asset": "yewTree",
+          "x": 86.4,
+          "z": -461.4,
+          "rotY": 4.4,
+          "scale": 20.19
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 35.9,
+          "z": -498.1,
+          "rotY": 3.28,
+          "scale": 20.74
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -55,
+          "z": -348.3,
+          "rotY": 1.52,
+          "scale": 24.4
+        },
+        {
+          "asset": "yewTree",
+          "x": -109.2,
+          "z": -337.1,
+          "rotY": 5.97,
+          "scale": 16.98
+        },
+        {
+          "asset": "yewTree",
+          "x": -50.1,
+          "z": -245.3,
+          "rotY": 3.37,
+          "scale": 21.49
+        },
+        {
+          "asset": "yewTree",
+          "x": 103.5,
+          "z": -513.8,
+          "rotY": 4.77,
+          "scale": 22.99
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -126.7,
+          "z": -281.9,
+          "rotY": 4.9,
+          "scale": 23.08
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -141.2,
+          "z": -382.4,
+          "rotY": 2.69,
+          "scale": 21.34
+        },
+        {
+          "asset": "yewTree",
+          "x": 83.4,
+          "z": -220.7,
+          "rotY": 0.58,
+          "scale": 19.02
+        },
+        {
+          "asset": "yewTree",
+          "x": 73.1,
+          "z": -559.7,
+          "rotY": 4.38,
+          "scale": 23.5
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -81.1,
+          "z": -164.7,
+          "rotY": 1.76,
+          "scale": 22.24
+        },
+        {
+          "asset": "yewTree",
+          "x": 135.9,
+          "z": -560.5,
+          "rotY": 0.46,
+          "scale": 22.61
+        },
+        {
+          "asset": "yewTree",
+          "x": -117.3,
+          "z": -227.3,
+          "rotY": 2.84,
+          "scale": 25.03
+        },
+        {
+          "asset": "yewTree",
+          "x": 84.7,
+          "z": -614,
+          "rotY": 0.3,
+          "scale": 18.29
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 111.3,
+          "z": -406.2,
+          "rotY": 3.47,
+          "scale": 19.09
+        },
+        {
+          "asset": "yewTree",
+          "x": 56,
+          "z": -349,
+          "rotY": 5.87,
+          "scale": 24.35
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 15.1,
+          "z": -446,
+          "rotY": 2.01,
+          "scale": 19.14
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 166.7,
+          "z": -514.8,
+          "rotY": 2.29,
+          "scale": 17.33
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -19.3,
+          "z": -499,
+          "rotY": 2.08,
+          "scale": 17.17
+        },
+        {
+          "asset": "yewTree",
+          "x": 82.6,
+          "z": -276.2,
+          "rotY": 3.71,
+          "scale": 20.35
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 10.4,
+          "z": -551.8,
+          "rotY": 2.47,
+          "scale": 24.72
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 133.6,
+          "z": -133.8,
+          "rotY": 0.83,
+          "scale": 23.07
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 257.7,
+          "z": -451.6,
+          "rotY": 0.4,
+          "scale": 21.53
+        },
+        {
+          "asset": "yewTree",
+          "x": -176.1,
+          "z": -254.5,
+          "rotY": 5.39,
+          "scale": 20.42
+        },
+        {
+          "asset": "yewTree",
+          "x": -172.3,
+          "z": -199.5,
+          "rotY": 1.21,
+          "scale": 20.27
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -174.5,
+          "z": -312.4,
+          "rotY": 6.28,
+          "scale": 19.49
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 215.3,
+          "z": -208.5,
+          "rotY": 4.54,
+          "scale": 21.1
+        },
+        {
+          "asset": "yewTree",
+          "x": -70.6,
+          "z": -476.1,
+          "rotY": 0.66,
+          "scale": 17.22
+        },
+        {
+          "asset": "yewTree",
+          "x": 153.1,
+          "z": -460.7,
+          "rotY": 4.43,
+          "scale": 24.56
+        },
+        {
+          "asset": "yewTree",
+          "x": 166.7,
+          "z": -405.7,
+          "rotY": 3.46,
+          "scale": 21.21
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -178.2,
+          "z": -424.2,
+          "rotY": 3.8,
+          "scale": 18.06
+        },
+        {
+          "asset": "yewTree",
+          "x": -225,
+          "z": -453.3,
+          "rotY": 3.29,
+          "scale": 18.43
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -124.3,
+          "z": -436.8,
+          "rotY": 2.66,
+          "scale": 21.83
+        },
+        {
+          "asset": "yewTree",
+          "x": 229.5,
+          "z": -404.2,
+          "rotY": 1.94,
+          "scale": 21.67
+        },
+        {
+          "asset": "yewTree",
+          "x": 191,
+          "z": -297.9,
+          "rotY": 2.52,
+          "scale": 23.34
+        },
+        {
+          "asset": "yewTree",
+          "x": 172.1,
+          "z": -242.9,
+          "rotY": 1.81,
+          "scale": 22.22
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 213.9,
+          "z": -351,
+          "rotY": 5.37,
+          "scale": 19.05
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": -225.1,
+          "z": -281.7,
+          "rotY": 5.06,
+          "scale": 24.34
+        },
+        {
+          "asset": "yewTree",
+          "x": 134.1,
+          "z": -353.5,
+          "rotY": 3.67,
+          "scale": 25.62
+        },
+        {
+          "asset": "yewTree",
+          "x": -44.9,
+          "z": -574.4,
+          "rotY": 4,
+          "scale": 25.82
+        },
+        {
+          "asset": "yewTree",
+          "x": -233.6,
+          "z": -398.8,
+          "rotY": 1.1,
+          "scale": 18.37
+        },
+        {
+          "asset": "yewTree",
+          "x": -172.1,
+          "z": -487.9,
+          "rotY": 3.54,
+          "scale": 25.24
+        },
+        {
+          "asset": "yewTree",
+          "x": -87.1,
+          "z": -528.6,
+          "rotY": 1.31,
+          "scale": 19.8
+        },
+        {
+          "asset": "yewTree",
+          "x": -153.6,
+          "z": -544.1,
+          "rotY": 0.28,
+          "scale": 24.45
+        },
+        {
+          "asset": "yewTree",
+          "x": 136.1,
+          "z": -293.7,
+          "rotY": 4.93,
+          "scale": 22.37
+        },
+        {
+          "asset": "witchwoodTree",
+          "x": 47.4,
+          "z": -179.1,
+          "rotY": 3.9,
+          "scale": 24.15
+        },
+        {
+          "asset": "yewTree",
+          "x": 27,
+          "z": -298.1,
+          "rotY": 3.88,
+          "scale": 17.84
+        },
+        {
+          "asset": "yewTree",
+          "x": -224.8,
+          "z": -216.6,
+          "rotY": 5.98,
+          "scale": 22.85
+        },
+        {
+          "asset": "treeStump",
+          "x": -37.3,
+          "z": -478.7,
+          "rotY": 3.45,
+          "scale": 2.61
+        },
+        {
+          "asset": "treeStump",
+          "x": -141.2,
+          "z": -470.1,
+          "rotY": 1.37,
+          "scale": 2.55
+        },
+        {
+          "asset": "treeStump",
+          "x": 119.6,
+          "z": -318.7,
+          "rotY": 0.05,
+          "scale": 2.43
+        },
+        {
+          "asset": "treeStump",
+          "x": 92.5,
+          "z": -112.4,
+          "rotY": 3.46,
+          "scale": 2.81
+        },
+        {
+          "asset": "treeStump",
+          "x": 104,
+          "z": -389,
+          "rotY": 2.57,
+          "scale": 3.04
+        },
+        {
+          "asset": "treeStump",
+          "x": -34.9,
+          "z": -448.5,
+          "rotY": 4.96,
+          "scale": 3.24
+        },
+        {
+          "asset": "treeStump",
+          "x": -91.3,
+          "z": -260.5,
+          "rotY": 2.28,
+          "scale": 2.85
+        },
+        {
+          "asset": "treeStump",
+          "x": 57.2,
+          "z": -511.2,
+          "rotY": 4.62,
+          "scale": 2.64
+        },
+        {
+          "asset": "treeStump",
+          "x": -146,
+          "z": -306.7,
+          "rotY": 1.93,
+          "scale": 3.22
+        },
+        {
+          "asset": "treeStump",
+          "x": 158.4,
+          "z": -313.6,
+          "rotY": 2.58,
+          "scale": 3.06
+        },
+        {
+          "asset": "treeStump",
+          "x": 74.5,
+          "z": -338.4,
+          "rotY": 1.59,
+          "scale": 2.61
+        },
+        {
+          "asset": "treeStump",
+          "x": 91.7,
+          "z": -558.7,
+          "rotY": 5.3,
+          "scale": 3.02
+        },
+        {
+          "asset": "treeStump",
+          "x": 31.1,
+          "z": -144.7,
+          "rotY": 1.03,
+          "scale": 3.01
+        },
+        {
+          "asset": "treeStump",
+          "x": -49,
+          "z": -183.3,
+          "rotY": 0.64,
+          "scale": 2.54
+        },
+        {
+          "asset": "treeStump",
+          "x": 183.7,
+          "z": -278,
+          "rotY": 4.57,
+          "scale": 2.49
+        },
+        {
+          "asset": "treeStump",
+          "x": -101.6,
+          "z": -580.6,
+          "rotY": 2.41,
+          "scale": 2.93
+        },
+        {
+          "asset": "treeStump",
+          "x": -156.7,
+          "z": -245.8,
+          "rotY": 5.95,
+          "scale": 3.31
+        },
+        {
+          "asset": "treeStump",
+          "x": 162.8,
+          "z": -232.1,
+          "rotY": 3.84,
+          "scale": 2.96
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -124.1,
+          "z": -180.9,
+          "rotY": 1.94,
+          "scale": 8.84
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -99,
+          "z": -396.6,
+          "rotY": 5.21,
+          "scale": 9.77
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -101.1,
+          "z": -113.4,
+          "rotY": 3.32,
+          "scale": 1.7
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 43.9,
+          "z": -577.8,
+          "rotY": 2.59,
+          "scale": 4.98
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 36.4,
+          "z": -580.4,
+          "rotY": 4.93,
+          "scale": 4.31
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 41.5,
+          "z": -592.6,
+          "rotY": 4.02,
+          "scale": 2.63
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 46.9,
+          "z": -596.2,
+          "rotY": 1.35,
+          "scale": 2.81
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 35.9,
+          "z": -595,
+          "rotY": 4.3,
+          "scale": 2.88
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 24.2,
+          "z": -199.5,
+          "rotY": 1.48,
+          "scale": 4.14
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 16.3,
+          "z": -194.6,
+          "rotY": 3.65,
+          "scale": 2.04
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 19.6,
+          "z": -209.1,
+          "rotY": 0.46,
+          "scale": 1.93
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -84.8,
+          "z": -208.2,
+          "rotY": 1.25,
+          "scale": 5.17
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -90.7,
+          "z": -207.4,
+          "rotY": 1.07,
+          "scale": 1.51
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -75.5,
+          "z": -202.1,
+          "rotY": 1.78,
+          "scale": 2.13
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -80.8,
+          "z": -199.4,
+          "rotY": 1.59,
+          "scale": 2.47
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 130.8,
+          "z": -494.4,
+          "rotY": 5.81,
+          "scale": 5.59
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 123.9,
+          "z": -488.7,
+          "rotY": 0.35,
+          "scale": 3.54
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 134.5,
+          "z": -487.8,
+          "rotY": 4.21,
+          "scale": 3.11
+        },
+        {
+          "asset": "deadTree",
+          "x": -21.2,
+          "z": -430.2,
+          "rotY": 2.77,
+          "scale": 9.36
+        },
+        {
+          "asset": "deadTree",
+          "x": 136.9,
+          "z": -199.8,
+          "rotY": 6.04,
+          "scale": 8.29
+        },
+        {
+          "asset": "deadTree",
+          "x": -40.5,
+          "z": -534.1,
+          "rotY": 3.41,
+          "scale": 9.36
+        },
+        {
+          "asset": "deadTree",
+          "x": 99.2,
+          "z": -173.9,
+          "rotY": 5.66,
+          "scale": 8.05
+        },
+        {
+          "asset": "deadTree",
+          "x": -209.5,
+          "z": -346.3,
+          "rotY": 3.28,
+          "scale": 8.29
+        },
+        {
+          "asset": "deadTree",
+          "x": -70.9,
+          "z": -306.2,
+          "rotY": 2.98,
+          "scale": 9.23
+        },
+        {
+          "asset": "deadTree",
+          "x": 173.7,
+          "z": -338.1,
+          "rotY": 2.74,
+          "scale": 9.8
+        },
+        {
+          "asset": "deadTree",
+          "x": -111.3,
+          "z": -560.1,
+          "rotY": 0.67,
+          "scale": 8.79
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -6.5,
+          "z": -326,
+          "rotY": 1.57,
+          "scale": 2.4
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 17.7,
+          "z": -592.8,
+          "rotY": 0.17,
+          "scale": 2.41
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -19.5,
+          "z": -592.3,
+          "rotY": 2.12,
+          "scale": 3.48
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 232.7,
+          "z": -349,
+          "rotY": 5.95,
+          "scale": 2.25
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 230.8,
+          "z": -382.3,
+          "rotY": 0.66,
+          "scale": 3.69
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -233.2,
+          "z": -382,
+          "rotY": 4,
+          "scale": 2.94
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -239.4,
+          "z": -350.8,
+          "rotY": 4.71,
+          "scale": 3.36
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -57.3,
+          "z": -143.4,
+          "rotY": 2.74,
+          "scale": 3.88
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 139.5,
+          "z": -173,
+          "rotY": 5.92,
+          "scale": 3.05
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -167.5,
+          "z": -528.4,
+          "rotY": 1.24,
+          "scale": 3.91
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 163.2,
+          "z": -533.8,
+          "rotY": 2.27,
+          "scale": 2.79
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -179.6,
+          "z": -214.3,
+          "rotY": 6.08,
+          "scale": 3.75
+        },
+        {
+          "asset": "mossBoulder",
+          "x": 195.7,
+          "z": -255,
+          "rotY": 5.23,
+          "scale": 3.35
+        },
+        {
+          "asset": "banditCampfire",
+          "x": -60,
+          "z": -186,
+          "rotY": 0,
+          "scale": 1.8
+        },
+        {
+          "asset": "banditBedroll",
+          "x": -63.4,
+          "z": -184.1,
+          "rotY": 3.65,
+          "scale": 1.1
+        },
+        {
+          "asset": "banditBedroll",
+          "x": -63.4,
+          "z": -187.9,
+          "rotY": 2.63,
+          "scale": 1.1
+        },
+        {
+          "asset": "treeStump",
+          "x": -58.2,
+          "z": -182.9,
+          "rotY": 0.53,
+          "scale": 1.3
+        },
+        {
+          "asset": "rubblePile",
+          "x": -58.8,
+          "z": -190.4,
+          "rotY": 1.1,
+          "scale": 1
+        },
+        {
+          "asset": "banditCampfire",
+          "x": 95,
+          "z": -236,
+          "rotY": 3.14,
+          "scale": 1.8
+        },
+        {
+          "asset": "banditBedroll",
+          "x": 98.4,
+          "z": -237.9,
+          "rotY": 0.51,
+          "scale": 1.1
+        },
+        {
+          "asset": "banditBedroll",
+          "x": 98.4,
+          "z": -234.1,
+          "rotY": 5.77,
+          "scale": 1.1
+        },
+        {
+          "asset": "treeStump",
+          "x": 93.2,
+          "z": -239.1,
+          "rotY": 3.67,
+          "scale": 1.3
+        },
+        {
+          "asset": "rubblePile",
+          "x": 93.8,
+          "z": -231.6,
+          "rotY": 4.24,
+          "scale": 1
+        },
+        {
+          "asset": "banditCampfire",
+          "x": -140,
+          "z": -506,
+          "rotY": 0,
+          "scale": 1.8
+        },
+        {
+          "asset": "banditBedroll",
+          "x": -143.4,
+          "z": -504.1,
+          "rotY": 3.65,
+          "scale": 1.1
+        },
+        {
+          "asset": "banditBedroll",
+          "x": -143.4,
+          "z": -507.9,
+          "rotY": 2.63,
+          "scale": 1.1
+        },
+        {
+          "asset": "treeStump",
+          "x": -138.2,
+          "z": -502.9,
+          "rotY": 0.53,
+          "scale": 1.3
+        },
+        {
+          "asset": "rubblePile",
+          "x": -138.8,
+          "z": -510.4,
+          "rotY": 1.1,
+          "scale": 1
+        },
+        {
+          "asset": "whWallA",
+          "x": -160.7,
+          "z": -195.1,
+          "rotY": 2.36,
+          "scale": 5.27,
+          "sy": 19.48,
+          "sz": 2,
+          "y": -0.4,
+          "wall": 6,
+          "cullM": 120
+        },
+        {
+          "asset": "whWallB",
+          "x": -167.8,
+          "z": -208,
+          "rotY": 2.36,
+          "scale": 5.27,
+          "sy": 19.26,
+          "sz": 2,
+          "y": -0.4,
+          "wall": 6,
+          "cullM": 120
+        },
+        {
+          "asset": "whWallA",
+          "x": -160.7,
+          "z": -200.3,
+          "rotY": 3.92,
+          "scale": 2.95,
+          "sy": 16.88,
+          "sz": 2,
+          "y": -0.4,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "whWallB",
+          "x": -163.5,
+          "z": -205.2,
+          "rotY": 3.92,
+          "scale": 2.95,
+          "sy": 16.69,
+          "sz": 2,
+          "y": -0.4,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "whWallA",
+          "x": -159.8,
+          "z": -204.1,
+          "rotY": 2.36,
+          "scale": 3.37,
+          "sy": 16.88,
+          "sz": 2,
+          "y": -0.4,
+          "wall": 4,
+          "cullM": 120
+        },
+        {
+          "asset": "cemeteryGate",
+          "x": -174.5,
+          "z": -200.9,
+          "rotY": 5.62,
+          "scale": 5.2,
+          "cullM": 120
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -171.6,
+          "z": -194.3,
+          "rotY": 5.9,
+          "scale": 1.6,
+          "y": 7,
+          "noCollide": true,
+          "cullM": 120
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -181.5,
+          "z": -188.8,
+          "rotY": 1.91,
+          "scale": 1.4,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -171.4,
+          "z": -198.3,
+          "rotY": 5.5,
+          "scale": 1.8,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -168.3,
+          "z": -192.2,
+          "rotY": 0.51,
+          "scale": 2.1,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -170.6,
+          "z": -200.4,
+          "rotY": 1.81,
+          "scale": 1.4,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -165.7,
+          "z": -192,
+          "rotY": 3.11,
+          "scale": 2.4,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -167.7,
+          "z": -198.6,
+          "rotY": 4.41,
+          "scale": 1.6,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -165.1,
+          "z": -195.4,
+          "rotY": 5.71,
+          "scale": 1.5,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -169.3,
+          "z": -189.3,
+          "rotY": 5.38,
+          "scale": 2,
+          "cullM": 120
+        },
+        {
+          "asset": "bramble",
+          "x": -170.3,
+          "z": -187.8,
+          "rotY": 0.72,
+          "scale": 1.6,
+          "cullM": 120
+        },
+        {
+          "asset": "graveMound",
+          "x": -167.9,
+          "z": -200.4,
+          "rotY": 5.5,
+          "scale": 1.1,
+          "tint": 7305802,
+          "cullM": 120
+        },
+        {
+          "asset": "graveMound",
+          "x": -164.9,
+          "z": -193.4,
+          "rotY": 1.31,
+          "scale": 1.1,
+          "tint": 7305802,
+          "cullM": 120
+        },
+        {
+          "asset": "graveMound",
+          "x": -172.2,
+          "z": -200.8,
+          "rotY": 3.41,
+          "scale": 1.1,
+          "tint": 7305802,
+          "cullM": 120
+        },
+        {
+          "asset": "graveMound",
+          "x": -162.5,
+          "z": -192.3,
+          "rotY": 5.51,
+          "scale": 1.1,
+          "tint": 7305802,
+          "cullM": 120
+        },
+        {
+          "asset": "churchArchway",
+          "x": -101,
+          "z": -207,
+          "rotY": 2.6,
+          "scale": 1.7
+        },
+        {
+          "asset": "churchCornerButtress",
+          "x": -104.5,
+          "z": -205,
+          "rotY": 1.2,
+          "scale": 1.5
+        },
+        {
+          "asset": "stoneSteps",
+          "x": -100.5,
+          "z": -210.5,
+          "rotY": 0.4,
+          "scale": 1.1
+        },
+        {
+          "asset": "rubblePile",
+          "x": -98.5,
+          "z": -203.5,
+          "rotY": 2.9,
+          "scale": 1.2
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -104,
+          "z": -210,
+          "rotY": 4.1,
+          "scale": 1.05
+        },
+        {
+          "asset": "rubblePile",
+          "x": -31,
+          "z": -139,
+          "rotY": 0.8,
+          "scale": 1.4
+        },
+        {
+          "asset": "churchCornerButtress",
+          "x": -33,
+          "z": -143.5,
+          "rotY": 2.2,
+          "scale": 1.4
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -29,
+          "z": -144,
+          "rotY": 5,
+          "scale": 1
+        },
+        {
+          "asset": "stoneCrossTilted",
+          "x": -26.5,
+          "z": -146.5,
+          "rotY": 3,
+          "scale": 1.55
+        },
+        {
+          "asset": "banditCampfire",
+          "x": -106.1,
+          "z": -472.1,
+          "rotY": 0,
+          "scale": 2.02,
+          "cullM": 140
+        },
+        {
+          "asset": "banditCampfire",
+          "x": 118,
+          "z": -448.6,
+          "rotY": 0.7,
+          "scale": 2.02,
+          "cullM": 140
+        },
+        {
+          "asset": "banditCampfire",
+          "x": -207.8,
+          "z": -246,
+          "rotY": 1.4,
+          "scale": 2.02,
+          "cullM": 140
+        },
+        {
+          "asset": "banditCampfire",
+          "x": 144.2,
+          "z": -536.9,
+          "rotY": 2.1,
+          "scale": 2.02,
+          "cullM": 140
+        },
+        {
+          "asset": "okFarmCottage",
+          "x": 150.5,
+          "z": -256.7,
+          "rotY": 3.15,
+          "scale": 3.68,
+          "cullM": 120
+        },
+        {
+          "asset": "okFarmWell",
+          "x": 154.9,
+          "z": -264.7,
+          "rotY": 3.75,
+          "scale": 1.26,
+          "cullM": 120
+        },
+        {
+          "asset": "okFenceGate",
+          "x": 150.4,
+          "z": -269.7,
+          "rotY": 3.15,
+          "scale": 1.32,
+          "wall": 2,
+          "cullM": 120
+        },
+        {
+          "asset": "okFencePost",
+          "x": 147.4,
+          "z": -269.7,
+          "rotY": 3.15,
+          "scale": 1.85,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "okFencePost",
+          "x": 143.9,
+          "z": -269.6,
+          "rotY": 3.15,
+          "scale": 1.85,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "okFencePost",
+          "x": 153.4,
+          "z": -269.7,
+          "rotY": 3.15,
+          "scale": 1.85,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "okFencePost",
+          "x": 156.9,
+          "z": -269.7,
+          "rotY": 3.15,
+          "scale": 1.85,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "okFenceCornerV2",
+          "x": 141.7,
+          "z": -269.6,
+          "rotY": 3.15,
+          "scale": 1.5,
+          "cullM": 120
+        },
+        {
+          "asset": "okFenceCornerV2",
+          "x": 159.1,
+          "z": -269.7,
+          "rotY": 0,
+          "scale": 1.5,
+          "cullM": 120
+        },
+        {
+          "asset": "okFenceStonewall",
+          "x": 141.7,
+          "z": -266.5,
+          "rotY": 4.72,
+          "scale": 2.5,
+          "wall": 4,
+          "cullM": 120
+        },
+        {
+          "asset": "okFenceStonewall",
+          "x": 159.1,
+          "z": -266.6,
+          "rotY": 4.72,
+          "scale": 2.5,
+          "wall": 4,
+          "cullM": 120
+        },
+        {
+          "asset": "okFencePost",
+          "x": 141.8,
+          "z": -262.2,
+          "rotY": 4.72,
+          "scale": 1.85,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "okFencePost",
+          "x": 159.2,
+          "z": -262.3,
+          "rotY": 4.72,
+          "scale": 1.85,
+          "wall": 3,
+          "cullM": 120
+        },
+        {
+          "asset": "lanternPost",
+          "x": 148.2,
+          "z": -271.3,
+          "rotY": 3.15,
+          "scale": 2.54,
+          "cullM": 120
+        },
+        {
+          "asset": "okRuinArch",
+          "x": -111.2,
+          "z": -201.7,
+          "rotY": 2.1,
+          "scale": 3.79,
+          "cullM": 120
+        },
+        {
+          "asset": "okRuinColumn",
+          "x": -114.2,
+          "z": -206.9,
+          "rotY": 2.8,
+          "scale": 3.95,
+          "cullM": 120
+        },
+        {
+          "asset": "okRuinColumn",
+          "x": -108.2,
+          "z": -196.5,
+          "rotY": 4.7,
+          "scale": 3.95,
+          "cullM": 120
+        },
+        {
+          "asset": "okTreeOak",
+          "x": -110.3,
+          "z": -158.5,
+          "rotY": 2.34,
+          "scale": 13,
+          "cullM": 140
+        },
+        {
+          "asset": "okTreeOak",
+          "x": -200.3,
+          "z": -272.6,
+          "rotY": 0.88,
+          "scale": 12.5,
+          "cullM": 140
+        },
+        {
+          "asset": "okTreePine",
+          "x": -13,
+          "z": -567,
+          "rotY": 1.2,
+          "scale": 12,
+          "cullM": 140
+        }
+      ],
+      "rotLair": {
+        "stains": [
+          {
+            "x": -167.8,
+            "z": -199.6,
+            "radius": 5
+          },
+          {
+            "x": -178.1,
+            "z": -190.4,
+            "radius": 1.8
+          },
+          {
+            "x": -186.1,
+            "z": -182.5,
+            "radius": 1.4
+          },
+          {
+            "x": -196.9,
+            "z": -180,
+            "radius": 1
+          }
+        ],
+        "pool": {
+          "segments": 28,
+          "rings": 4,
+          "lift": 0.08,
+          "color": 1317904,
+          "color2": 2239765,
+          "speck": 4017186,
+          "textureSeed": 20261013,
+          "edgeFeather": 0.3
+        },
+        "void": {
+          "x": -160.4,
+          "z": -203.6,
+          "rotY": 2.36,
+          "width": 4.6,
+          "height": 9,
+          "color": 0
+        },
+        "cullM": 120
+      }
+    },
+    "regionD": {
+      "id": "rot_den",
+      "name": "The Rot Mother's Den",
+      "center": {
+        "x": -186,
+        "z": -180
+      },
+      "groundRadius": 34,
+      "groundY": 0,
+      "groundColor": 1185294,
+      "groundColor2": 1909780,
+      "groundSeed": 1662061218,
+      "scatter": false,
+      "spawn": {
+        "x": -156,
+        "z": -190
+      },
+      "gravityY": -22,
+      "fogColor": 329482,
+      "fogDensity": 0.12,
+      "ambientLightLevel": 0.06,
+      "door": {
+        "planeZ": -215.2,
+        "doorX": -150.8,
+        "doorHalfWidth": 3,
+        "suspendDepthM": 0,
+        "wallGapPadM": 0,
+        "interactM": 3.5,
+        "interactAt": {
+          "x": -163.4,
+          "z": -202.6
+        },
+        "land": {
+          "forest_of_the_old_king": {
+            "x": -163.4,
+            "z": -202.6,
+            "faceX": 0,
+            "faceZ": -366
+          },
+          "rot_den": {
+            "x": -185.8,
+            "z": -180.2,
+            "faceX": -185.8,
+            "faceZ": -180.2
+          }
+        },
+        "fadeIn": 0.3,
+        "fadeOut": 0.5,
+        "exitFadeOut": 0.8,
+        "text": {
+          "prompt": "E - Enter the den"
+        }
+      },
+      "enemies": [],
+      "lairs": [
+        {
+          "type": "rotmother",
+          "x": -185.8,
+          "z": -180.2
+        }
+      ],
+      "props": [
+        {
+          "asset": "whWallA",
+          "x": -165.5,
+          "z": -188.5,
+          "rotY": 2.72,
+          "scale": 7.84,
+          "sy": 11.69,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallB",
+          "x": -176.1,
+          "z": -198,
+          "rotY": 2.12,
+          "scale": 7.84,
+          "sy": 11.55,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallA",
+          "x": -179.6,
+          "z": -211.9,
+          "rotY": 1.51,
+          "scale": 7.84,
+          "sy": 11.69,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallB",
+          "x": -174.5,
+          "z": -225.2,
+          "rotY": 0.91,
+          "scale": 7.84,
+          "sy": 11.55,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallA",
+          "x": -162.7,
+          "z": -233.3,
+          "rotY": 0.3,
+          "scale": 7.84,
+          "sy": 11.69,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallB",
+          "x": -148.5,
+          "z": -233.3,
+          "rotY": 5.98,
+          "scale": 7.84,
+          "sy": 11.55,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallA",
+          "x": -136.7,
+          "z": -225.2,
+          "rotY": 5.38,
+          "scale": 7.84,
+          "sy": 11.69,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallB",
+          "x": -131.6,
+          "z": -211.9,
+          "rotY": 4.77,
+          "scale": 7.84,
+          "sy": 11.55,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallA",
+          "x": -135.1,
+          "z": -198,
+          "rotY": 4.17,
+          "scale": 7.84,
+          "sy": 11.69,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "whWallB",
+          "x": -145.7,
+          "z": -188.5,
+          "rotY": 3.56,
+          "scale": 7.84,
+          "sy": 11.55,
+          "sz": 2.4,
+          "y": -0.2,
+          "wall": 8
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -163.1,
+          "z": -287.7,
+          "rotY": 0,
+          "scale": 1.6
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -155.5,
+          "z": -264.7,
+          "rotY": 1.4,
+          "scale": 1.8
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -195.4,
+          "z": -277.8,
+          "rotY": 4.9,
+          "scale": 2.3
+        },
+        {
+          "asset": "mossBoulder",
+          "x": -186.9,
+          "z": -287.7,
+          "rotY": 5.6,
+          "scale": 2.4
+        },
+        {
+          "asset": "stoneSteps",
+          "x": -187,
+          "z": -285,
+          "rotY": 0,
+          "scale": 1.2
+        },
+        {
+          "asset": "stoneSteps",
+          "x": -161.5,
+          "z": -283,
+          "rotY": 1.1,
+          "scale": 1.1
+        },
+        {
+          "asset": "stoneSteps",
+          "x": -192,
+          "z": -267,
+          "rotY": 2.2,
+          "scale": 1.3
+        },
+        {
+          "asset": "stoneSteps",
+          "x": -159,
+          "z": -263,
+          "rotY": 3.3,
+          "scale": 1.2
+        },
+        {
+          "asset": "skullPile",
+          "x": -184,
+          "z": -288,
+          "rotY": 4.4,
+          "scale": 1
+        },
+        {
+          "asset": "skullPile",
+          "x": -164.5,
+          "z": -253,
+          "rotY": 5.5,
+          "scale": 1.1
+        },
+        {
+          "asset": "graveMound",
+          "x": -190,
+          "z": -277,
+          "rotY": 0.32,
+          "scale": 1.1,
+          "tint": 7305802
+        },
+        {
+          "asset": "graveMound",
+          "x": -160,
+          "z": -274,
+          "rotY": 1.42,
+          "scale": 1,
+          "tint": 7305802
+        },
+        {
+          "asset": "graveMound",
+          "x": -181,
+          "z": -251.5,
+          "rotY": 2.52,
+          "scale": 1.2,
+          "tint": 7305802
+        },
+        {
+          "asset": "blightcap",
+          "x": -182.5,
+          "z": -282,
+          "rotY": 3.62,
+          "scale": 0.9
+        },
+        {
+          "asset": "blightcap",
+          "x": -167,
+          "z": -286.5,
+          "rotY": 4.72,
+          "scale": 1.1
+        },
+        {
+          "asset": "blightcap",
+          "x": -191.5,
+          "z": -259,
+          "rotY": 5.82,
+          "scale": 1.2
+        },
+        {
+          "asset": "blightcap",
+          "x": -158,
+          "z": -256,
+          "rotY": 0.63,
+          "scale": 0.8
+        },
+        {
+          "asset": "blightcap",
+          "x": -171,
+          "z": -252,
+          "rotY": 1.73,
+          "scale": 1
+        },
+        {
+          "asset": "blightcap",
+          "x": -187.5,
+          "z": -272,
+          "rotY": 2.83,
+          "scale": 0.9
+        },
+        {
+          "asset": "graveMound",
+          "x": -177.2,
+          "z": -257.8,
+          "rotY": 0,
+          "scale": 1.1,
+          "tint": 7305802
+        },
+        {
+          "asset": "graveMound",
+          "x": -182.5,
+          "z": -264.9,
+          "rotY": 1.7,
+          "scale": 1.1,
+          "tint": 7305802
+        },
+        {
+          "asset": "graveMound",
+          "x": -177.4,
+          "z": -272.1,
+          "rotY": 3.4,
+          "scale": 1.1,
+          "tint": 7305802
+        },
+        {
+          "asset": "graveMound",
+          "x": -169,
+          "z": -269.5,
+          "rotY": 5.1,
+          "scale": 1.1,
+          "tint": 7305802
+        },
+        {
+          "asset": "graveMound",
+          "x": -168.9,
+          "z": -260.7,
+          "rotY": 0.52,
+          "scale": 1.1,
+          "tint": 7305802
+        }
+      ],
+      "rotLair": {
+        "pool": {
+          "radius": 10,
+          "segments": 40,
+          "rings": 6,
+          "lift": 0.08,
+          "color": 2042391,
+          "color2": 3885594,
+          "speck": 6257194,
+          "textureSeed": 20261012,
+          "edgeFeather": 0.22
+        },
+        "light": {
+          "height": 1.2,
+          "intensity": 1.6,
+          "color": 8372047
+        },
+        "fog": {
+          "cards": 10,
+          "radiusMin": 2.5,
+          "radiusMax": 9,
+          "heightMin": 0.5,
+          "heightMax": 1.6,
+          "width": 3.6,
+          "height": 1.5,
+          "opacity": 0.16,
+          "color": 8363861,
+          "driftSpeed": 0.12,
+          "showWithinM": 70
+        },
+        "cullM": 170
+      }
+    },
+    "scatter": {
+      "enabled": true,
+      "seed": 20261005,
+      "clear": {
+        "spawnM": 5,
+        "pathM": 6,
+        "gateM": 8,
+        "enemyM": 4,
+        "nodeM": 2.5,
+        "edgeM": 2
+      },
+      "keepOut": [
+        {
+          "regionId": "hold_outskirts",
+          "x": 0,
+          "z": 10,
+          "rx": 36,
+          "rz": 33
+        }
+      ],
+      "treesExtra": {
+        "minSpacingM": 7,
+        "propClearM": 4,
+        "candidates": 32,
+        "targetCount": {
+          "hold_outskirts": 14,
+          "darkwood_edge": 10
+        },
+        "assets": [
+          [
+            "youngBirch",
+            3,
+            8.5,
+            11.5
+          ],
+          [
+            "youngDeadTree",
+            2,
+            6,
+            9
+          ],
+          [
+            "yewTree",
+            2,
+            15.5,
+            18.5
+          ],
+          [
+            "witchwoodTree",
+            1,
+            15.5,
+            18.5
+          ],
+          [
+            "reachTreeA",
+            1,
+            15.5,
+            18.5
+          ],
+          [
+            "reachTreeB",
+            1,
+            15.5,
+            18.5
+          ],
+          [
+            "reachTreeC",
+            1,
+            15.5,
+            18.5
+          ],
+          [
+            "deadTree",
+            1,
+            13.5,
+            16.5
+          ]
+        ]
+      },
+      "bushes": {
+        "assets": [
+          [
+            "bramble",
+            1,
+            1.4,
+            2
+          ]
+        ],
+        "selfRadiusFrac": 0.5,
+        "ringHosts": [
+          "yewTree",
+          "livingOak",
+          "witchwoodTree",
+          "deadTree",
+          "youngAsh",
+          "youngBirch",
+          "youngDeadTree",
+          "reachTreeA",
+          "reachTreeB",
+          "reachTreeC"
+        ],
+        "atTreeRing": {
+          "count": [
+            2,
+            4
+          ],
+          "radiusFrac": [
+            1.1,
+            1.6
+          ],
+          "assets": [
+            [
+              "whBushSnare",
+              1,
+              1,
+              1.4
+            ]
+          ]
+        },
+        "freeBushes": 20
+      },
+      "grass": {
+        "asset": "grassTuft",
+        "count": 220,
+        "height": [
+          0.35,
+          0.6
+        ],
+        "pathPadM": 0.4
+      }
+    },
+    "roads": [
+      {
+        "id": "kingsRoad",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            0,
+            -88
+          ],
+          [
+            -2.5,
+            -104
+          ],
+          [
+            4,
+            -138
+          ],
+          [
+            2,
+            -168
+          ],
+          [
+            4,
+            -215
+          ],
+          [
+            -3,
+            -255
+          ],
+          [
+            0,
+            -300
+          ],
+          [
+            0,
+            -332
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 7,
+        "swayPeriod": 90,
+        "swayRampM": 24,
+        "lift": 0.1,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "stoneApproach",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            0,
+            -332
+          ],
+          [
+            0,
+            -352
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 0,
+        "lift": 0.1,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "stoneRing",
+        "regionId": "forest_of_the_old_king",
+        "ring": {
+          "x": 0,
+          "z": -366,
+          "r": 34
+        },
+        "halfWidth": 2.2,
+        "swayAmp": 0,
+        "lift": 0.16,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "northRoad",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            0,
+            -400
+          ],
+          [
+            -3,
+            -420
+          ],
+          [
+            -12,
+            -460
+          ],
+          [
+            5,
+            -500
+          ],
+          [
+            -5,
+            -540
+          ],
+          [
+            0,
+            -596
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 6,
+        "swayPeriod": 90,
+        "swayRampM": 24,
+        "lift": 0.13,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "eastRoad",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            34,
+            -366
+          ],
+          [
+            62,
+            -356
+          ],
+          [
+            100,
+            -370
+          ],
+          [
+            150,
+            -368
+          ],
+          [
+            200,
+            -368
+          ],
+          [
+            240,
+            -366
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 6,
+        "swayPeriod": 90,
+        "swayRampM": 24,
+        "lift": 0.13,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "westRoad",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            -34,
+            -366
+          ],
+          [
+            -66,
+            -362
+          ],
+          [
+            -100,
+            -370
+          ],
+          [
+            -150,
+            -357
+          ],
+          [
+            -200,
+            -370
+          ],
+          [
+            -240,
+            -366
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 6,
+        "swayPeriod": 90,
+        "swayRampM": 24,
+        "lift": 0.13,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "northNotch",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            0,
+            -596
+          ],
+          [
+            0,
+            -626
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 0,
+        "lift": 0.14,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "eastNotch",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            240,
+            -366
+          ],
+          [
+            270,
+            -366
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 0,
+        "lift": 0.14,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      },
+      {
+        "id": "westNotch",
+        "regionId": "forest_of_the_old_king",
+        "points": [
+          [
+            -240,
+            -366
+          ],
+          [
+            -270,
+            -366
+          ]
+        ],
+        "halfWidth": 2.2,
+        "swayAmp": 0,
+        "lift": 0.14,
+        "tileLengthMeters": 3,
+        "repeatAcrossWidth": 1,
+        "textureSeed": 20261008
+      }
+    ],
+    "boundary": {
+      "z": -25,
+      "xMin": -80,
+      "xMax": 80,
+      "wallHeight": 8
+    },
+    "chokepoint": {
+      "centerX": 0,
+      "width": 8,
+      "markerScale": 2
+    },
+    "boundaryWall": {
+      "enabled": true,
+      "seed": 20261006,
+      "radius": 87.5,
+      "minRadius": 86.5,
+      "segmentLengthUnits": 4,
+      "overlapM": 0.2,
+      "heightM": 7.2,
+      "depthScale": 0.7,
+      "sinkM": 0.05,
+      "assets": [
+        "whWallA",
+        "whWallB"
+      ],
+      "jitter": {
+        "radial": 0.7,
+        "rotJitterDeg": 4
+      },
+      "chordZ": -25,
+      "chordFromX": 4,
+      "chordToRim": true,
+      "collider": {
+        "r": 0.45,
+        "perSegment": 3
+      },
+      "exclusion": {
+        "clearM": 0.5,
+        "nudgeStepM": 0.25,
+        "nudgeMaxM": 1,
+        "maxDrops": 2
+      },
+      "arch": {
+        "asset": "b3Gate",
+        "x": 0,
+        "z": -25,
+        "rotY": 0,
+        "fitOpening": 5.2,
+        "openingFrac": 0.3428,
+        "openingCenterFrac": 0.0059,
+        "apexFrac": 0.6454,
+        "depthFrac": 0.6338,
+        "depthScale": 0.45,
+        "legs": {
+          "r": 0.6,
+          "spacingM": 1
+        },
+        "plugCorners": true,
+        "plugR": 0.5
+      },
+      "lantern": {
+        "asset": "whLanternHang",
+        "heightM": 0.75,
+        "scale": 1.2,
+        "topBelowApexM": -0.05
+      }
+    },
+    "preWarm": {
+      "distance": 30,
+      "hysteresis": 20
+    },
+    "mistPlane": {
+      "enabled": true,
+      "regionId": "darkwood_edge",
+      "colorHex": 12962252,
+      "y": 1.5,
+      "opacityX100": 14
+    },
+    "player": {
+      "walkSpeed": 6,
+      "sprintSpeed": 10,
+      "sprintStaminaPerSec": 18,
+      "rollSpeed": 14,
+      "rollDuration": 0.45,
+      "rollIFrameWindow": 0.433,
+      "rollStaminaCost": 25,
+      "staminaMax": 100,
+      "staminaRegenPerSec": 28,
+      "staminaRegenDelay": 0.6,
+      "hpMax": 100,
+      "hpRegenPerSec": 0,
+      "turnLerpDegPerSec": 720,
+      "turnLerpDegPerSecAttackWindup": 720,
+      "radius": 0.7,
+      "camDistance": 7,
+      "camMinDistance": 3,
+      "camMaxDistance": 14,
+      "camPitchMinDeg": -15,
+      "camPitchMaxDeg": 65,
+      "camHeight": 2.6,
+      "camGroundClearance": 0.4,
+      "camPitchDistShrink": 0.35,
+      "camFollowLerp": 12,
+      "mouseSensDegPerPx": 0.25,
+      "respawnDelay": 2.2,
+      "focusMax": 100,
+      "focusRegenPerSec": 2,
+      "focusRegenDelay": 0.5,
+      "castFocusTaxMult": 1.25
+    },
+    "mouse": {
+      "pointerLockSensMult": 0.85,
+      "autoBindOnCanvasClick": true,
+      "unbindOnUiOpen": true,
+      "rebindOnUiClose": false
+    },
+    "spell": {
+      "firebolt": {
+        "kind": "projectile",
+        "focusCost": 8,
+        "damage": 12,
+        "speed": 40,
+        "hitRadius": 0.5,
+        "maxRange": 30,
+        "castWindup": 0.25,
+        "castCooldown": 0.3,
+        "schoolColor": 16742178,
+        "name": "Firebolt",
+        "glyph": "FB",
+        "light": {
+          "color": 16742178,
+          "intensity": 10,
+          "distance": 12,
+          "decay": 2,
+          "flickerPct": 5
+        },
+        "projectileLight": {
+          "color": 16742178,
+          "intensity": 2.5,
+          "distance": 6,
+          "decay": 2,
+          "flickerPct": 8
+        }
+      },
+      "radiance": {
+        "kind": "followLight",
+        "focusCost": 10,
+        "castWindup": 0.3,
+        "castCooldown": 0.3,
+        "durationSeconds": 60,
+        "lightColor": 16757611,
+        "lightIntensity": 8,
+        "lightDistance": 14,
+        "lightDecay": 2,
+        "glowColor": 16767392,
+        "schoolColor": 16767392,
+        "name": "Radiance",
+        "glyph": "RD",
+        "light": null,
+        "orbRadius": 0.14,
+        "orbSegments": [
+          12,
+          8
+        ],
+        "anchorOffset": [
+          0.45,
+          1.9,
+          0.1
+        ],
+        "bobAmp": 0.06,
+        "bobHz": 0.5,
+        "fadeInSeconds": 0.4,
+        "fadeOutSeconds": 1
+      }
+    },
+    "belt": {
+      "slots": 5,
+      "defaultSpells": [
+        "firebolt",
+        "radiance",
+        null,
+        null,
+        null
+      ],
+      "regripSeconds": 0.3,
+      "consumableSlots": 2
+    },
+    "actionbar": {
+      "slots": 5,
+      "defaults": [
+        {
+          "kind": "spell",
+          "id": "firebolt"
+        },
+        {
+          "kind": "spell",
+          "id": "radiance"
+        },
+        {
+          "kind": "item",
+          "id": "roundShield"
+        },
+        {
+          "kind": "item",
+          "id": "magicGlove"
+        },
+        {
+          "kind": "item",
+          "id": "torch"
+        }
+      ],
+      "lsKey": "wh-actionbar-v1",
+      "longPressMs": 400,
+      "pickerExclude": [
+        "bandage"
+      ]
+    },
+    "save": {
+      "lsKey": "wh-save-v1",
+      "version": 1,
+      "text": {
+        "saved": "Saved.",
+        "noSave": "No save yet",
+        "load": "LOAD",
+        "continue": "CONTINUE",
+        "newGame": "NEW GAME"
+      }
+    },
+    "loadout": {
+      "toggleSeconds": 0.8
+    },
+    "armed": {
+      "windowSeconds": 3.5,
+      "damageMult": 1.5,
+      "crossDamageMult": 2
+    },
+    "consumable": {
+      "healthPotion": {
+        "heal": 40,
+        "charges": 3
+      }
+    },
+    "block": {
+      "parryWindow": 0.25,
+      "parryStaminaCost": 5,
+      "absorb": 0.8,
+      "staminaCostMult": 0.9,
+      "blockArcHalfAngleDeg": 90,
+      "moveMult": 0.5,
+      "blockingRegenMult": 0.5,
+      "guardBreakStun": 0.8,
+      "guardBreakMinStamina": 30,
+      "riposteMult": 1.75,
+      "riposteStaggerDur": 1.25,
+      "parryFlashSeconds": 0.15,
+      "blockFlashSeconds": 0.12,
+      "guardBreakFlashSeconds": 0.5,
+      "guardBreakTextSeconds": 1.4,
+      "blockAnim": {
+        "raiseCrossfadeSec": 0.06,
+        "impactCrossfadeSec": 0.03,
+        "parryCrossfadeSec": 0.03,
+        "guardBreakCrossfadeSec": 0.06
+      },
+      "deflectEnemyRecoilSec": 0.15,
+      "deflect": {
+        "yawDeg": 18,
+        "leanBackDeg": 10,
+        "weaponKnockDeg": 40,
+        "pushback": 0.25
+      },
+      "parryEnemyHitReact": true,
+      "riposteMarker": {
+        "color": 14201418,
+        "radius": 0.85,
+        "width": 0.14,
+        "segments": 12,
+        "opacity": 0.9,
+        "pulseMin": 0.45,
+        "pulseHz": 3,
+        "endScale": 0.6,
+        "yOffset": 0.04
+      }
+    },
+    "enemy": {
+      "bandit": {
+        "hpMax": 70,
+        "moveSpeed": 3.6,
+        "chaseSpeed": 5,
+        "attackDamage": 12,
+        "attackRange": 2.4,
+        "attackCooldown": 1.4,
+        "sightRadius": 16,
+        "leashRadius": 34,
+        "staggerTime": 0.4,
+        "radius": 0.7,
+        "aggroPingInterval": 0.2,
+        "attackPhase": {
+          "windup": 0.7,
+          "active": 0.12,
+          "recover": 0.8,
+          "hitArcDeg": 50,
+          "trackDegPerSec": 180
+        },
+        "ai1": {
+          "decisionSeconds": 0.4,
+          "alwaysKnowsRadius": 4,
+          "strafeBandInner": 3.4,
+          "strafeBandOuter": 7,
+          "strafeSpeedMult": 0.75,
+          "strafeDirFlipSeconds": 1.8,
+          "attackRadius": 2.4,
+          "attackBias": 0.55,
+          "guardChance": 0.45,
+          "guardRespondRadius": 6,
+          "guardSecondsMax": 1.6,
+          "guardArcDeg": 50,
+          "guardDamageMult": 0.5
+        }
+      },
+      "ghoul": {
+        "hpMax": 45,
+        "moveSpeed": 4.4,
+        "chaseSpeed": 7,
+        "attackDamage": 8,
+        "attackRange": 2,
+        "attackCooldown": 1,
+        "sightRadius": 18,
+        "leashRadius": 36,
+        "staggerTime": 0.35,
+        "radius": 0.6,
+        "aggroPingInterval": 0.2,
+        "attackPhase": {
+          "windup": 0.45,
+          "active": 0.12,
+          "recover": 0.5,
+          "hitArcDeg": 50,
+          "trackDegPerSec": 180
+        },
+        "ai1": {
+          "guardMode": 0
+        }
+      },
+      "wolf": {
+        "hpMax": 38,
+        "moveSpeed": 4.6,
+        "chaseSpeed": 7.5,
+        "attackDamage": 9,
+        "attackRange": 2.1,
+        "attackCooldown": 1.2,
+        "sightRadius": 15,
+        "leashRadius": 40,
+        "staggerTime": 0.25,
+        "radius": 0.6,
+        "aggroPingInterval": 0.2,
+        "attackPhase": {
+          "windup": 0.35,
+          "active": 0.1,
+          "recover": 0.45,
+          "hitArcDeg": 45,
+          "trackDegPerSec": 220
+        },
+        "ai1": {
+          "decisionSeconds": 0.35,
+          "alwaysKnowsRadius": 4,
+          "strafeBandInner": 2.6,
+          "strafeBandOuter": 6,
+          "strafeSpeedMult": 0.8,
+          "strafeDirFlipSeconds": 1.4,
+          "attackRadius": 2.1,
+          "attackBias": 0.7,
+          "guardChance": 0.2,
+          "guardRespondRadius": 5,
+          "guardSecondsMax": 0.8,
+          "guardArcDeg": 45,
+          "guardDamageMult": 0.5
+        },
+        "nightBoldnessMult": 1.5,
+        "bodyHeight": 0.95,
+        "pack": {
+          "leashFromCentroid": 26,
+          "regroupRadius": 12,
+          "packAggroSpread": 40,
+          "membersInFlight": 2,
+          "slotSpacingM": 6,
+          "slotLateralM": 2,
+          "patrolPace": 0.85,
+          "slotHoldM": 6,
+          "slotGain": 1.5
+        }
+      },
+      "rotmother": {
+        "name": "Rot Mother",
+        "hp": 460,
+        "dmg": 26,
+        "speed": 1.6,
+        "aggro": 9,
+        "lair": {
+          "x": 0,
+          "y": 6,
+          "region": "D",
+          "flag": "C"
+        },
+        "scale": 2.2,
+        "pattern": "boss-slam",
+        "slamCooldown": 3.4,
+        "slamWindup": 1.15,
+        "poison": {
+          "dps": 3.5,
+          "duration": 4,
+          "slow": 0.45
+        },
+        "rearm": {
+          "days": 3,
+          "trigger": "proximity",
+          "radius": 14
+        },
+        "loot": [
+          {
+            "mat": "rot-silk",
+            "n": [
+              2,
+              4
+            ]
+          },
+          {
+            "mat": "rot-gland",
+            "n": [
+              1,
+              2
+            ]
+          }
+        ],
+        "minions": {
+          "asset": "rotspawn",
+          "cap": 3,
+          "interval": 7,
+          "range": 6,
+          "dieOnMasterDeath": true
+        },
+        "radius": 1.1,
+        "leashRadius": 16,
+        "staggerTime": 0.35,
+        "superArmor": true,
+        "lairRadius": 14,
+        "engageRange": 2.6,
+        "slamRadius": 3.2,
+        "slamArcDeg": 180,
+        "slamActive": 0.15,
+        "slamRecover": 0.9,
+        "slamTrackDegPerSec": 50,
+        "slamKnockbackM": 2.4,
+        "slamKnockbackSec": 0.25,
+        "barLiftM": 2.2,
+        "riseSec": 1.6,
+        "poisonText": "Rot poison - your limbs go heavy"
+      },
+      "rotspawn": {
+        "name": "Rot Spawn",
+        "hp": 26,
+        "dmg": 5,
+        "speed": 2.4,
+        "aggro": 14,
+        "scale": 0.8,
+        "pattern": "chase-melee",
+        "loot": [
+          {
+            "mat": "rot-silk",
+            "n": [
+              0,
+              1
+            ]
+          }
+        ],
+        "radius": 0.45,
+        "attackRange": 1.3,
+        "leashRadius": 24,
+        "staggerTime": 0.3,
+        "lunge": true,
+        "attackPhase": {
+          "windup": 0.35,
+          "active": 0.1,
+          "recover": 0.55,
+          "hitArcDeg": 50,
+          "trackDegPerSec": 240
+        },
+        "corpseLingerSec": 8,
+        "maxCorpses": 4,
+        "riseSec": 0.8
+      },
+      "bodyByType": {
+        "bandit": "banditBody",
+        "ghoul": "ghoulBody",
+        "wolf": "wolfBody",
+        "rotmother": "rotmotherBody",
+        "rotspawn": "rotspawnBody"
+      },
+      "animVariantByType": {
+        "bandit": "bandit",
+        "ghoul": "zombie",
+        "wolf": "wolf"
+      },
+      "rigidAnimByType": {
+        "rotmother": "rotmother",
+        "rotspawn": "rotspawn"
+      },
+      "wolfPacks": [
+        {
+          "id": "east",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              190,
+              -318
+            ],
+            [
+              214,
+              -322
+            ],
+            [
+              222,
+              -340
+            ],
+            [
+              220,
+              -372
+            ],
+            [
+              205,
+              -398
+            ],
+            [
+              178,
+              -388
+            ],
+            [
+              166,
+              -360
+            ],
+            [
+              192,
+              -334
+            ]
+          ]
+        },
+        {
+          "id": "west",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              -190,
+              -420
+            ],
+            [
+              -215,
+              -418
+            ],
+            [
+              -224,
+              -388
+            ],
+            [
+              -224,
+              -362
+            ],
+            [
+              -200,
+              -358
+            ],
+            [
+              -178,
+              -340
+            ],
+            [
+              -166,
+              -372
+            ],
+            [
+              -172,
+              -402
+            ]
+          ]
+        },
+        {
+          "id": "north",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              -25,
+              -520
+            ],
+            [
+              -30,
+              -548
+            ],
+            [
+              -62,
+              -562
+            ],
+            [
+              -50,
+              -585
+            ],
+            [
+              -25,
+              -586
+            ],
+            [
+              10,
+              -578
+            ],
+            [
+              25,
+              -545
+            ],
+            [
+              12,
+              -515
+            ]
+          ]
+        },
+        {
+          "id": "sw",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              -89.9,
+              -336.7
+            ],
+            [
+              -78.4,
+              -328
+            ],
+            [
+              -70.9,
+              -290.5
+            ],
+            [
+              -86.6,
+              -279.6
+            ],
+            [
+              -112.5,
+              -276.1
+            ],
+            [
+              -140.3,
+              -293.6
+            ],
+            [
+              -141.4,
+              -322
+            ],
+            [
+              -122.7,
+              -329.6
+            ]
+          ]
+        },
+        {
+          "id": "se",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              79.6,
+              -186.8
+            ],
+            [
+              115.2,
+              -158.5
+            ],
+            [
+              110.4,
+              -142.3
+            ],
+            [
+              108.8,
+              -127.6
+            ],
+            [
+              61.1,
+              -118.7
+            ],
+            [
+              56.4,
+              -130.3
+            ],
+            [
+              45.7,
+              -161.7
+            ],
+            [
+              65.2,
+              -193.3
+            ]
+          ]
+        },
+        {
+          "id": "ss",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              62.5,
+              -249.5
+            ],
+            [
+              73.9,
+              -256.9
+            ],
+            [
+              92.1,
+              -203.5
+            ],
+            [
+              74.8,
+              -188.5
+            ],
+            [
+              69.7,
+              -181.7
+            ],
+            [
+              37.7,
+              -203.8
+            ],
+            [
+              17.8,
+              -224.5
+            ],
+            [
+              38.3,
+              -254.6
+            ]
+          ]
+        },
+        {
+          "id": "nw2",
+          "regionId": "forest_of_the_old_king",
+          "members": 4,
+          "spawnSpread": 6,
+          "waypoints": [
+            [
+              223.3,
+              -482.5
+            ],
+            [
+              236.3,
+              -473.8
+            ],
+            [
+              240.9,
+              -461
+            ],
+            [
+              229.4,
+              -440
+            ],
+            [
+              213.5,
+              -436.9
+            ],
+            [
+              199.7,
+              -452.5
+            ],
+            [
+              198.2,
+              -467.8
+            ],
+            [
+              200.4,
+              -482
+            ]
+          ]
+        }
+      ],
+      "separationPush": 6,
+      "holdAtBoundaryMargin": 1.5
+    },
+    "hud": {
+      "regionNameFadeSeconds": 2.6,
+      "deathFadeSeconds": 0.8,
+      "fpsUpdateInterval": 0.5,
+      "bootOverlayFadeMs": 900,
+      "hpbars": {
+        "widthPx": 46,
+        "heightPx": 6,
+        "heightAboveHeadM": 2.3,
+        "fadeStartM": 16,
+        "fadeEndM": 32,
+        "minOpacity": 0.45,
+        "hideBeyondM": 40,
+        "scaleNearM": 6,
+        "scaleFarM": 30,
+        "deathFadeSec": 1.2
+      },
+      "dayClock": {
+        "sizePx": 64,
+        "topPx": 14,
+        "frameColor": "#5a5344",
+        "daySeg": "#8a6b3a",
+        "nightSeg": "#23283a",
+        "needleColor": "#d8c9a0",
+        "needleLenFrac": 0.42
+      }
+    },
+    "lockOn": {
+      "maxDistance": 18,
+      "hysteresis": 1.25,
+      "facingConeDeg": 140,
+      "camLerp": 6,
+      "trackWindupDegPerSec": 240,
+      "camExtraDistance": 0,
+      "reticleOffsetY": 0.9,
+      "lightRadiusFactor": 0.8,
+      "lightCheckIntervalSec": 0,
+      "tooDarkText": "Too dark to target",
+      "tooDarkToastSeconds": 1.2
+    },
+    "animRt": {
+      "crossfadeSeconds": 0.18,
+      "oneShotFadeSeconds": 0.08,
+      "walkMetersPerCycle": 6,
+      "runMetersPerCycle": 6,
+      "attackClipStrikeFraction": 0.25
+    },
+    "anim": {
+      "attack": {
+        "windupLean": -0.25,
+        "windupSwordRaise": 0.9,
+        "strikeYawSweepDeg": 140,
+        "strikeSwordSweepDeg": 160
+      },
+      "walk": {
+        "bobAmp": 0.02,
+        "bobFreqWalk": 9,
+        "bobFreqSprint": 14,
+        "leanWalk": 0.08,
+        "leanSprint": 0.16,
+        "swayAmp": 0.05,
+        "swayFreqMult": 0.5,
+        "counterRollAmp": 0.05,
+        "yawOscAmp": 0.06,
+        "footDipAmp": 0.005,
+        "footDipFreqMult": 2,
+        "sprintAmpMult": 1.5,
+        "idleDelay": 0.5,
+        "idleBobAmp": 0.02,
+        "idlePeriod": 1.2,
+        "idleYawAmp": 0.02
+      },
+      "enemyWalk": {
+        "bandit": {
+          "bob": 1,
+          "sway": 1,
+          "lean": 1,
+          "yawOsc": 1
+        },
+        "ghoul": {
+          "bob": 1.1,
+          "sway": 1.6,
+          "lean": 1.2,
+          "yawOsc": 1.3
+        }
+      },
+      "ghoulHop": {
+        "height": 0.25,
+        "duration": 0.25
+      },
+      "stagger": {
+        "visualDuration": 0.15,
+        "leanBack": 0.25,
+        "knockback": 1.2
+      },
+      "death": {
+        "settleOvershoot": 0.05,
+        "settleDuration": 0.45
+      },
+      "shake": {
+        "amplitude": 0.05,
+        "duration": 0.15
+      }
+    },
+    "loop": {
+      "maxDt": 0.05,
+      "fixedTickHz": 60
+    },
+    "assets": {
+      "timeoutMs": 20000,
+      "bodyRetryCount": 2,
+      "bodyRetryDelayMs": 750,
+      "assetTimeoutMsPerMb": 6000,
+      "assetTimeoutMinMs": 20000,
+      "assetTimeoutMaxMs": 120000,
+      "criticalPoolSize": 4,
+      "streamPoolSize": 6,
+      "stallLineAfterMs": 8000,
+      "bootCritical": [
+        "playerBody",
+        "banditBody",
+        "ghoulBody",
+        "wolfBody",
+        "playerDagClips",
+        "bramble",
+        "whCampkit",
+        "whTent",
+        "yewTree",
+        "livingOak",
+        "youngAsh",
+        "cemeteryGate",
+        "torch",
+        "mossBoulder",
+        "witchwoodTree",
+        "mourningStatue",
+        "deadTree",
+        "fallenLog",
+        "reachTreeA",
+        "lanternWaymarker",
+        "picketFence",
+        "treeStump",
+        "b3Gate",
+        "lanternPost",
+        "youngBirch",
+        "whWallB",
+        "banditCampfire",
+        "whWallA",
+        "reachTreeB",
+        "reachTreeC",
+        "youngDeadTree",
+        "whLanternHang",
+        "graveMound",
+        "dagger",
+        "grassTuft",
+        "rubblePile",
+        "stoneCrossTilted",
+        "roundShield",
+        "ironFenceSection",
+        "churchCornerButtress",
+        "gravestoneObelisk",
+        "churchPewBroken",
+        "buriedCoffin",
+        "handAxe",
+        "churchArchway",
+        "whBushSnare",
+        "longsword",
+        "rotmotherBody",
+        "stoneSteps",
+        "skullPile",
+        "blightcap"
+      ],
+      "caster": {
+        "items": [
+          "magicGlove"
+        ],
+        "backwardDot": -0.5,
+        "largeHitFraction": 0.2,
+        "castShotSpeed": 2.25,
+        "fire1HFraction": 0.46,
+        "cast1HClipSeconds": 2.3,
+        "castUpperBody": true,
+        "castUpperNodes": [
+          "Spine",
+          "Chest",
+          "Neck",
+          "Head",
+          "L_Shoulder",
+          "L_UpperArm",
+          "L_Forearm",
+          "L_Hand",
+          "R_Shoulder",
+          "R_UpperArm",
+          "R_Forearm",
+          "R_Hand"
+        ],
+        "castLowerNodes": [
+          "Hips",
+          "Root",
+          "L_Thigh",
+          "L_Shin",
+          "L_Foot",
+          "R_Thigh",
+          "R_Shin",
+          "R_Foot"
+        ]
+      },
+      "pixelatedBodies": true,
+      "standInColor": 7829367,
+      "groundSink": {
+        "reachTreeA": 0.0312,
+        "reachTreeB": 0.0878,
+        "reachTreeC": 0.05
+      },
+      "weaponScaleEnabled": true,
+      "weaponTargetHeight": {
+        "longsword": 1.05,
+        "handAxe": 0.6,
+        "roundShield": 1,
+        "torch": 0.62,
+        "dagger": 0.35
+      },
+      "weaponMount": {
+        "rollDeg": 0,
+        "enabled": true,
+        "gripHolderY": {
+          "longsword": 1.637,
+          "handAxe": 0,
+          "dagger": 0
+        }
+      },
+      "shieldMount": {
+        "faceAxis": [
+          -0.876,
+          0.4,
+          0.271
+        ],
+        "upAxis": [
+          -0.327,
+          -0.903,
+          0.277
+        ],
+        "rollDeg": 0,
+        "offset": [
+          -0.028,
+          0.099,
+          0.035
+        ]
+      },
+      "torchMount": {
+        "headAxis": [
+          0,
+          0,
+          1
+        ],
+        "rollDeg": 0,
+        "offset": [
+          0.018,
+          0.078,
+          0.021
+        ],
+        "gripHolderY": 0.5,
+        "lightHolderY": 1.7,
+        "carry": {
+          "liftDeg": 65,
+          "bendDeg": 15,
+          "easeSec": 0.25,
+          "straightenAxis": [
+            -0.3271,
+            0.9396,
+            0.101
+          ]
+        }
+      }
+    },
+    "moveset": {
+      "idlePose": {
+        "pos": [
+          0.7,
+          1,
+          -0.3
+        ],
+        "rot": [
+          2.2,
+          -0.7,
+          0.6
+        ]
+      },
+      "banditStageMult": 1.6,
+      "enemyWeapon": {
+        "bandit": "handAxe"
+      },
+      "playerWeapon": "longsword",
+      "inputBufferSec": 0.65,
+      "weapons": {
+        "longsword": {
+          "chainCap": 3,
+          "chain": [
+            "slashR2L",
+            "slashL2R",
+            "thrust"
+          ],
+          "moveMultWhileAttacking": {
+            "windup": 0.3,
+            "strike": 0,
+            "recover": 0
+          },
+          "bladeAxisY": -1,
+          "moves": {
+            "slashR2L": {
+              "pose": "m2",
+              "windup": 0.57,
+              "strike": 0.2,
+              "recover": 0.73,
+              "chainOpenSec": 0.2,
+              "damage": 34,
+              "range": 3.2,
+              "halfAngleDeg": 70,
+              "lunge": 1,
+              "staminaCost": 15,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              },
+              "bufferFrom": 0.5,
+              "rootMotion": {
+                "windup": [
+                  0,
+                  0
+                ],
+                "strike": [
+                  0,
+                  0.9
+                ],
+                "recover": [
+                  0.9,
+                  1
+                ]
+              }
+            },
+            "slashL2R": {
+              "pose": "m1",
+              "windup": 0.8,
+              "strike": 0.26,
+              "recover": 0.61,
+              "chainOpenSec": 0.26,
+              "damage": 34,
+              "range": 3.2,
+              "halfAngleDeg": 70,
+              "lunge": 1,
+              "staminaCost": 15,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              },
+              "bufferFrom": 0.5,
+              "rootMotion": {
+                "windup": [
+                  0,
+                  0
+                ],
+                "strike": [
+                  0,
+                  0.9
+                ],
+                "recover": [
+                  0.9,
+                  1
+                ]
+              }
+            },
+            "thrust": {
+              "pose": "m4",
+              "windup": 0.4,
+              "strike": 0.43,
+              "recover": 0.17,
+              "chainOpenSec": 0.4,
+              "damage": 40,
+              "range": 3.8,
+              "halfAngleDeg": 22,
+              "lunge": 1,
+              "staminaCost": 20,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.8
+              },
+              "bufferFrom": 0.5,
+              "rootMotion": {
+                "windup": [
+                  0,
+                  0
+                ],
+                "strike": [
+                  0,
+                  1.5
+                ],
+                "recover": [
+                  1.5,
+                  1.7
+                ]
+              }
+            }
+          }
+        },
+        "handAxe": {
+          "chainCap": 2,
+          "chain": [
+            "hack",
+            "chop"
+          ],
+          "moveMultWhileAttacking": {
+            "windup": 0.4,
+            "strike": 0,
+            "recover": 0
+          },
+          "bladeAxisY": 1,
+          "moves": {
+            "hack": {
+              "pose": "claw",
+              "windup": 0.1,
+              "strike": 0.14,
+              "recover": 0.22,
+              "chainOpenSec": 0.08,
+              "damage": 22,
+              "range": 2.6,
+              "halfAngleDeg": 60,
+              "lunge": 0.5,
+              "staminaCost": 10,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              }
+            },
+            "chop": {
+              "pose": "m3",
+              "windup": 0.12,
+              "strike": 0.14,
+              "recover": 0.3,
+              "chainOpenSec": 0.3,
+              "damage": 27,
+              "range": 2.7,
+              "halfAngleDeg": 35,
+              "lunge": 0.7,
+              "staminaCost": 12,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              }
+            }
+          }
+        },
+        "dagger": {
+          "chainCap": 3,
+          "chain": [
+            "dagSlashR2L",
+            "dagSlashL2R",
+            "dagSlashR2Lb"
+          ],
+          "moveMultWhileAttacking": {
+            "windup": 0.4,
+            "strike": 0,
+            "recover": 0
+          },
+          "bladeAxisY": 1,
+          "moves": {
+            "dagSlashR2L": {
+              "pose": "m2",
+              "windup": 0.13,
+              "strike": 0.16,
+              "recover": 0.21,
+              "chainOpenSec": 0.21,
+              "damage": 7.5,
+              "range": 1.9,
+              "halfAngleDeg": 55,
+              "lunge": 0.4,
+              "staminaCost": 7,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              }
+            },
+            "dagSlashL2R": {
+              "pose": "m1",
+              "windup": 0.13,
+              "strike": 0.16,
+              "recover": 0.21,
+              "chainOpenSec": 0.21,
+              "damage": 7.5,
+              "range": 1.9,
+              "halfAngleDeg": 55,
+              "lunge": 0.4,
+              "staminaCost": 7,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              }
+            },
+            "dagSlashR2Lb": {
+              "pose": "m2",
+              "windup": 0.15,
+              "strike": 0.18,
+              "recover": 0.71,
+              "chainOpenSec": 0.71,
+              "damage": 10,
+              "range": 1.9,
+              "halfAngleDeg": 55,
+              "lunge": 0.4,
+              "staminaCost": 9,
+              "damageGhoulMult": 1.15,
+              "cancel": {
+                "dodge": 0.9,
+                "guard": 0.95,
+                "move": 0.65
+              }
+            }
+          }
+        }
+      }
+    },
+    "combat": {
+      "er": {
+        "dodgeHoldSec": 0.35,
+        "guardRaiseSec": 0.13,
+        "moveCancelWalkMult": 0.5,
+        "backstep": {
+          "duration": 0.3,
+          "speedMult": 0.9,
+          "iframes": 0.2,
+          "staminaCost": 20
+        }
+      },
+      "bleed": {
+        "parryChance": 0.5,
+        "hitChance": 0.15,
+        "tickFraction": 0.5,
+        "durationSec": 5,
+        "tickSec": 1,
+        "refresh": "reset",
+        "riderOffHand": {
+          "enabled": false,
+          "chance": 0.5
+        },
+        "ring": {
+          "color": 11740190,
+          "radius": 0.7,
+          "width": 0.12,
+          "segments": 12,
+          "opacity": 0.85,
+          "yOffset": 0.035
+        }
+      }
+    },
+    "touch": {
+      "enabled": false,
+      "opacity": 0.35,
+      "deadzone": 0.15,
+      "scaleDefault": 1,
+      "scaleMin": 0.6,
+      "scaleMax": 1.6,
+      "buttonSize": 64,
+      "joystickRadius": 70,
+      "sensDegPerPx": 0.25,
+      "layout": {
+        "stick": {
+          "x": 0.18,
+          "y": 0.72
+        },
+        "cam": {
+          "x": 0.82,
+          "y": 0.72
+        },
+        "sprint": {
+          "x": 0.68,
+          "y": 0.62
+        },
+        "attack": {
+          "x": 0.9,
+          "y": 0.45
+        },
+        "lockon": {
+          "x": 0.72,
+          "y": 0.82
+        },
+        "dodge": {
+          "x": 0.55,
+          "y": 0.88
+        },
+        "block": {
+          "x": 0.9,
+          "y": 0.65
+        },
+        "interact": {
+          "x": 0.74,
+          "y": 0.38
+        }
+      }
+    },
+    "inventory": {
+      "slots": 24,
+      "defaultStackCap": 60,
+      "startingItems": [
+        {
+          "id": "magicGlove",
+          "count": 1
+        },
+        {
+          "id": "magicGlove",
+          "count": 1
+        },
+        {
+          "id": "longsword",
+          "count": 1
+        },
+        {
+          "id": "roundShield",
+          "count": 1
+        },
+        {
+          "id": "bandage",
+          "count": 1
+        }
+      ],
+      "drop": {
+        "mode": "physical",
+        "scatterRadius": 1.75,
+        "pickupRadius": 1.6
+      },
+      "entity": {
+        "size": 0.28,
+        "spinDegPerSec": 70,
+        "colors": {
+          "consumable": 14201418,
+          "gear": 4901080,
+          "valuable": 10481904,
+          "ingredient": 8173664,
+          "food": 12614202
+        }
+      }
+    },
+    "drops": {
+      "bonusChance": 0.2,
+      "bonusPool": [
+        {
+          "id": "torch",
+          "weight": 50
+        },
+        {
+          "id": "bandage",
+          "weight": 30
+        },
+        {
+          "id": "magicGlove",
+          "weight": 8
+        }
+      ],
+      "guaranteed": {
+        "id": "stolenCoin",
+        "count": 1
+      }
+    },
+    "corpseLoot": {
+      "lootRadius": 1.6,
+      "promptText": "USE - Loot",
+      "lootToast": "Looted: {list}",
+      "partialSuffix": " - Inventory full",
+      "fullText": "Inventory full",
+      "appearDelaySec": 0.6,
+      "fadeInSec": 0.4,
+      "fadeOutSec": 0.5,
+      "glowColor": 14201418,
+      "glowOpacity": 0.55,
+      "glowPulseSec": 2.4,
+      "glowPulseMin": 0.6,
+      "glowScale": 1.5,
+      "glowHeight": 0.45,
+      "groundGlow": {
+        "radius": 0.95,
+        "opacity": 0.45
+      },
+      "sparks": {
+        "count": 14,
+        "riseSpeed": 0.45,
+        "drift": 0.12,
+        "lifetimeSec": 2.2,
+        "lifetimeJitter": 0.35,
+        "spawnRadius": 0.45,
+        "size": 0.07,
+        "color": 16765562
+      }
+    },
+    "items": {
+      "bandage": {
+        "id": "bandage",
+        "name": "Bandage",
+        "glyph": "BD",
+        "category": "consumable",
+        "useHint": {
+          "kind": "heal",
+          "amount": 25
+        }
+      },
+      "magicGlove": {
+        "id": "magicGlove",
+        "name": "Magic Glove",
+        "glyph": "MG",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "caster",
+        "hands": [
+          "left",
+          "right"
+        ],
+        "equipHint": "leftHand",
+        "cast": {
+          "powerTier": 1
+        }
+      },
+      "longsword": {
+        "id": "longsword",
+        "name": "Longsword",
+        "glyph": "LS",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "melee",
+        "moveset": "longsword",
+        "mesh": "longsword",
+        "hands": [
+          "right",
+          "left"
+        ],
+        "equipHint": "rightHand"
+      },
+      "dagger": {
+        "id": "dagger",
+        "name": "Dagger",
+        "glyph": "DG",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "melee",
+        "moveset": "dagger",
+        "mesh": "dagger",
+        "hands": [
+          "right"
+        ],
+        "equipHint": "rightHand"
+      },
+      "roundShield": {
+        "id": "roundShield",
+        "name": "Round Shield",
+        "glyph": "SH",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "shield",
+        "mesh": "roundShield",
+        "hands": [
+          "right",
+          "left"
+        ],
+        "equipHint": "leftHand",
+        "block": {
+          "moveMult": 0.5
+        }
+      },
+      "buckler": {
+        "id": "buckler",
+        "name": "Buckler",
+        "glyph": "BK",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "shield",
+        "hands": [
+          "right",
+          "left"
+        ],
+        "equipHint": "leftHand",
+        "block": {
+          "moveMult": 0.75
+        }
+      },
+      "towerShield": {
+        "id": "towerShield",
+        "name": "Tower Shield",
+        "glyph": "TS",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "shield",
+        "hands": [
+          "right",
+          "left"
+        ],
+        "equipHint": "leftHand",
+        "block": {
+          "moveMult": 0.25
+        }
+      },
+      "torch": {
+        "id": "torch",
+        "name": "Torch",
+        "glyph": "TR",
+        "category": "gear",
+        "stackCap": 1,
+        "kind": "torch",
+        "mesh": "torch",
+        "hands": [
+          "left",
+          "right"
+        ],
+        "equipHint": "leftHand",
+        "light": {
+          "color": 16752704,
+          "intensity": 10.5,
+          "distance": 15,
+          "decay": 2,
+          "flickerPct": 7
+        }
+      },
+      "stolenCoin": {
+        "id": "stolenCoin",
+        "name": "Stolen Coin",
+        "glyph": "SC",
+        "category": "valuable",
+        "stackCap": 999
+      },
+      "rot-silk": {
+        "id": "rot-silk",
+        "name": "Rot-Silk",
+        "glyph": "RS",
+        "category": "valuable",
+        "stackCap": 99,
+        "material": true,
+        "flavor": "Damp grey thread, spun to swaddle young that never woke",
+        "dropLog": "Rot-Silk: she wove it soft, and wrapped each one as if it might still breathe."
+      },
+      "rot-gland": {
+        "id": "rot-gland",
+        "name": "Rot-Gland",
+        "glyph": "RG",
+        "category": "valuable",
+        "stackCap": 99,
+        "material": true,
+        "flavor": "A swollen sac, still warm, still trying to make milk",
+        "dropLog": "Rot-Gland: it kept working after everything else in her had given up."
+      },
+      "forestHerb": {
+        "id": "forestHerb",
+        "name": "Forest Herb",
+        "glyph": "FH",
+        "category": "ingredient"
+      },
+      "deadwood": {
+        "id": "deadwood",
+        "name": "Deadwood",
+        "glyph": "DW",
+        "category": "ingredient"
+      },
+      "wildMushroom": {
+        "id": "wildMushroom",
+        "name": "Wild Mushroom",
+        "glyph": "WM",
+        "category": "ingredient"
+      },
+      "graveMoss": {
+        "id": "graveMoss",
+        "name": "Grave Moss",
+        "glyph": "GM",
+        "category": "ingredient"
+      },
+      "boneShard": {
+        "id": "boneShard",
+        "name": "Bone Shard",
+        "glyph": "BS",
+        "category": "ingredient"
+      },
+      "graveSoup": {
+        "id": "graveSoup",
+        "name": "Grave Soup",
+        "glyph": "GS",
+        "category": "food",
+        "weight": 20,
+        "useHint": {
+          "kind": "eat",
+          "buff": "graveSoup"
+        },
+        "flavor": "Earthy, bitter, strangely fortifying"
+      },
+      "blandMush": {
+        "id": "blandMush",
+        "name": "Bland Mush",
+        "glyph": "BM",
+        "category": "food",
+        "weight": 15,
+        "useHint": {
+          "kind": "eat",
+          "buff": "blandMush"
+        },
+        "flavor": "A sad grey mush"
+      }
+    },
+    "cooking": {
+      "interactRadius": 2.5,
+      "channelSeconds": 3,
+      "interruptKeys": [
+        "KeyW",
+        "KeyA",
+        "KeyS",
+        "KeyD",
+        "Space"
+      ],
+      "buffDurationFallbackSec": 480,
+      "fire": {
+        "startFuelSec": 240,
+        "burnPerCookSec": 10,
+        "burnTickSec": 1,
+        "refuelCooks": 4,
+        "fuelItem": "deadwood",
+        "burntLightIntensity": 0
+      },
+      "stations": [
+        {
+          "id": "banditFire",
+          "kind": "cookFire",
+          "regionId": "darkwood_edge",
+          "asset": "banditCampfire",
+          "x": 2.5,
+          "z": -52,
+          "startLit": true
+        },
+        {
+          "id": "banditFireA",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": -60,
+          "z": -186,
+          "startLit": true
+        },
+        {
+          "id": "banditFireB",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": 95,
+          "z": -236,
+          "startLit": true
+        },
+        {
+          "id": "banditFireC",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": -140,
+          "z": -506,
+          "startLit": true
+        },
+        {
+          "id": "banditFireD1",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": -106.1,
+          "z": -472.1,
+          "startLit": true
+        },
+        {
+          "id": "banditFireD2",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": 118,
+          "z": -448.6,
+          "startLit": true
+        },
+        {
+          "id": "banditFireD3",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": -207.8,
+          "z": -246,
+          "startLit": true
+        },
+        {
+          "id": "banditFireD4",
+          "kind": "campfire",
+          "regionId": "forest_of_the_old_king",
+          "asset": "banditCampfire",
+          "x": 144.2,
+          "z": -536.9,
+          "startLit": true
+        }
+      ],
+      "recipes": [
+        {
+          "id": "graveSoup",
+          "name": "Grave Soup",
+          "ingredients": [
+            "graveMoss",
+            "wildMushroom",
+            "boneShard"
+          ],
+          "result": "graveSoup",
+          "effect": "graveSoup",
+          "known": false
+        }
+      ],
+      "fallbackResult": "blandMush",
+      "buffs": {
+        "graveSoup": {
+          "label": "Grave Soup",
+          "glyph": "GS",
+          "stat": "hpMax",
+          "amount": 20,
+          "days": 1,
+          "dayMeal": true
+        },
+        "blandMush": {
+          "label": "Bland Mush",
+          "glyph": "BM",
+          "kind": "hot",
+          "rate": 2,
+          "tickSec": 1,
+          "durationSec": 30
+        }
+      },
+      "hint": {
+        "noMushroomText": "Mushrooms favor the dead...",
+        "hintItem": "wildMushroom"
+      },
+      "text": {
+        "promptCook": "E - Cook",
+        "promptBurnt": "Fire burnt out - E to add Deadwood (fuel)",
+        "promptLow": "Fire too low - E to add Deadwood (fuel)",
+        "promptCampfire": "E - Warm your hands",
+        "campfireToast": "The bandits' fire - it offers nothing to a stranger.",
+        "refuelToast": "The fire takes.",
+        "noFuelToast": "You need Deadwood to feed the fire",
+        "addWoodBtn": "ADD WOOD",
+        "tooLowToast": "The fire is too low to cook",
+        "needThreeToast": "Add three ingredients",
+        "missingToast": "Missing ingredients",
+        "cookedToast": "Cooked: {name}",
+        "learnedToast": "Recipe learned: {name}",
+        "interruptToast": "Cooking interrupted",
+        "eatToast": "Ate {name}",
+        "alreadyAteToast": "You have already eaten today",
+        "kitToast": "Campsite kit acquired"
+      },
+      "toastChainSec": 2,
+      "kitButton": {
+        "label": "CAMP",
+        "glyph": "▲",
+        "left": 76,
+        "bottom": 20
+      },
+      "buffHud": {
+        "warnSec": 30
+      }
+    },
+    "camp": {
+      "interactRadius": 2.5,
+      "assets": {
+        "fire": {
+          "glb": "whCampkit",
+          "node": "firepit",
+          "scale": 1
+        },
+        "bedroll": {
+          "glb": "whCampkit",
+          "node": "bedroll",
+          "scale": 1
+        },
+        "tent": {
+          "glb": "whTent",
+          "scale": 2.2
+        },
+        "pegs": {
+          "glb": "whCampkit",
+          "node": "pegs",
+          "scale": 1.6
+        }
+      },
+      "tentPlaceholder": {
+        "width": 2,
+        "length": 2.4,
+        "height": 1.4,
+        "color": 3025444,
+        "poleColor": 4864810
+      },
+      "modules": [
+        {
+          "id": "fire",
+          "hook": "cook",
+          "asset": "fire",
+          "offset": [
+            0,
+            0
+          ],
+          "rotY": 0,
+          "station": {
+            "kind": "cookFire",
+            "startLit": true
+          }
+        },
+        {
+          "id": "bedroll",
+          "hook": "sleep",
+          "asset": "bedroll",
+          "offset": [
+            3,
+            1
+          ],
+          "rotY": 1.5707963267948966
+        },
+        {
+          "id": "tent",
+          "hook": "sleep",
+          "asset": "tent",
+          "offset": [
+            0,
+            3.6
+          ],
+          "rotY": 0,
+          "menuAnchor": true
+        },
+        {
+          "id": "pegs",
+          "hook": "none",
+          "asset": "pegs",
+          "offset": [
+            0,
+            3.6
+          ],
+          "rotY": 0
+        }
+      ],
+      "respawnStepM": 1.5,
+      "worldCamps": [
+        {
+          "id": "banditCamp",
+          "regionId": "darkwood_edge",
+          "modules": [
+            {
+              "id": "tent",
+              "hook": "sleep",
+              "asset": "tent",
+              "x": 5,
+              "z": -54.6,
+              "rotY": -0.77
+            }
+          ],
+          "respawn": {
+            "x": 6,
+            "z": -55.7
+          },
+          "face": {
+            "x": 2.5,
+            "z": -52
+          }
+        }
+      ],
+      "deploy": {
+        "maxSites": 1,
+        "maxReachM": 9,
+        "startAheadM": 4,
+        "pathBand": 2.5,
+        "ghostColor": 13777450,
+        "ghostOpacity": 0.45,
+        "ghostOkColor": 3854954
+      },
+      "sleepFadeSec": 0.6,
+      "text": {
+        "prompt": "E - Camp",
+        "menuTitle": "CAMP",
+        "save": "Save",
+        "saveHeal": "Save and Heal",
+        "cancel": "Cancel",
+        "savedToast": "Respawn point set",
+        "restedToast": "You wake at dawn - Day {day}",
+        "sleepGate": "Cannot sleep, it is not yet Dusk/Night.",
+        "placingToast": "Choose open ground - click / E to camp, Esc / CAMP to cancel",
+        "placedToast": "Camp set up",
+        "refuseToast": "No room to camp here - {why}",
+        "why": {
+          "edge": "too close to the edge",
+          "gate": "too close to the gate",
+          "path": "too close to the path",
+          "keepOut": "too close to the graveyard",
+          "spawn": "too close to the trailhead",
+          "tree": "too close to a tree",
+          "prop": "something is in the way",
+          "enemy": "enemies nearby",
+          "node": "too close to forage",
+          "camp": "too close to another camp"
+        }
+      }
+    },
+    "dayNight": {
+      "dayLengthSec": 6000,
+      "daySegmentSec": 2700,
+      "startPhase": "night",
+      "order": [
+        "dawn",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "bounds": {
+        "dawn": 0,
+        "day": 0.05,
+        "dusk": 0.5,
+        "night": 0.55
+      },
+      "blendFrac": 0.5,
+      "blendSec": 90,
+      "phases": {
+        "night": {
+          "hemiSkyColor": 4872832,
+          "hemiGroundColor": 1447966,
+          "hemiFillMult": 1,
+          "lightColor": 11058406,
+          "lightIntensity": 0.9,
+          "azimuthDeg": 0,
+          "elevationDeg": 30,
+          "exposureMult": 1,
+          "fog": {
+            "hold_outskirts": {
+              "color": 10133667,
+              "density": 0.012,
+              "cemColor": 8359590,
+              "cemDensity": 0.03
+            },
+            "darkwood_edge": {
+              "color": 7304311,
+              "density": 0.024
+            },
+            "forest_of_the_old_king": {
+              "color": 5857883,
+              "density": 0.033
+            }
+          },
+          "zenithColor": 461336,
+          "horizonBand": 2831184,
+          "horizonGlow": 9410733,
+          "stars": 1,
+          "discColor": 14673906,
+          "discGlowColor": 11058406,
+          "discOpacity": 1
+        },
+        "dawn": {
+          "hemiSkyColor": 6973560,
+          "hemiGroundColor": 1973278,
+          "hemiFillMult": 1.5,
+          "lightColor": 13215886,
+          "lightIntensity": 0.8,
+          "azimuthDeg": 80,
+          "elevationDeg": 10,
+          "exposureMult": 1,
+          "fog": {
+            "hold_outskirts": {
+              "color": 10656408,
+              "density": 0.011,
+              "cemColor": 9342108,
+              "cemDensity": 0.026
+            },
+            "darkwood_edge": {
+              "color": 7828335,
+              "density": 0.021
+            },
+            "forest_of_the_old_king": {
+              "color": 6252128,
+              "density": 0.03
+            }
+          },
+          "zenithColor": 2501700,
+          "horizonBand": 7233126,
+          "horizonGlow": 11048074,
+          "stars": 0.35,
+          "discColor": 15782576,
+          "discGlowColor": 11569264,
+          "discOpacity": 0.9
+        },
+        "day": {
+          "hemiSkyColor": 9081500,
+          "hemiGroundColor": 2763298,
+          "hemiFillMult": 2.4,
+          "lightColor": 14209212,
+          "lightIntensity": 1.25,
+          "azimuthDeg": 160,
+          "elevationDeg": 50,
+          "exposureMult": 1,
+          "fog": {
+            "hold_outskirts": {
+              "color": 10791078,
+              "density": 0.008,
+              "cemColor": 10133928,
+              "cemDensity": 0.02
+            },
+            "darkwood_edge": {
+              "color": 8422783,
+              "density": 0.017
+            },
+            "forest_of_the_old_king": {
+              "color": 6975850,
+              "density": 0.025
+            }
+          },
+          "zenithColor": 5660782,
+          "horizonBand": 8818066,
+          "horizonGlow": 11120043,
+          "stars": 0,
+          "discColor": 15787724,
+          "discGlowColor": 12103316,
+          "discOpacity": 0.85
+        },
+        "dusk": {
+          "hemiSkyColor": 6183534,
+          "hemiGroundColor": 1710108,
+          "hemiFillMult": 1.4,
+          "lightColor": 12619898,
+          "lightIntensity": 0.75,
+          "azimuthDeg": 250,
+          "elevationDeg": 10,
+          "exposureMult": 1,
+          "fog": {
+            "hold_outskirts": {
+              "color": 10261654,
+              "density": 0.012,
+              "cemColor": 8817312,
+              "cemDensity": 0.027
+            },
+            "darkwood_edge": {
+              "color": 7499372,
+              "density": 0.022
+            },
+            "forest_of_the_old_king": {
+              "color": 6054492,
+              "density": 0.031
+            }
+          },
+          "zenithColor": 1843768,
+          "horizonBand": 6704728,
+          "horizonGlow": 10257528,
+          "stars": 0.25,
+          "discColor": 15251604,
+          "discGlowColor": 10514528,
+          "discOpacity": 0.9
+        }
+      },
+      "constantPhases": {
+        "rot_den": {
+          "hemiSkyColor": 1712176,
+          "hemiGroundColor": 526603,
+          "hemiFillMult": 1,
+          "lightColor": 11058406,
+          "lightIntensity": 0,
+          "azimuthDeg": 0,
+          "elevationDeg": 30,
+          "exposureMult": 0.75,
+          "fog": {
+            "rot_den": {
+              "color": 329482,
+              "density": 0.12
+            }
+          },
+          "zenithColor": 131845,
+          "horizonBand": 329482,
+          "horizonGlow": 658706,
+          "stars": 0.15,
+          "discColor": 14673906,
+          "discGlowColor": 11058406,
+          "discOpacity": 0.2
+        }
+      },
+      "pools": {
+        "day": [
+          "art-direction/textures/sky2v2/sky2-day.jpg",
+          "art-direction/textures/sky2v2/sky3-dayB.jpg",
+          "art-direction/textures/sky2v2/sky3-dayC.jpg",
+          "art-direction/textures/sky2v2/sky3-dayD.jpg"
+        ],
+        "dawn": [
+          "art-direction/textures/sky2v2/sky2-dawn.jpg",
+          "art-direction/textures/sky2v2/sky3-dawnB.jpg",
+          "art-direction/textures/sky2v2/sky3-dawnC.jpg",
+          "art-direction/textures/sky2v2/sky3-dawnD.jpg"
+        ],
+        "dusk": [
+          "art-direction/textures/sky2v2/sky2-dusk.jpg",
+          "art-direction/textures/sky2v2/sky3-duskB.jpg",
+          "art-direction/textures/sky2v2/sky3-duskC.jpg",
+          "art-direction/textures/sky2v2/sky3-duskD.jpg"
+        ],
+        "night": [
+          "art-direction/textures/sky2v2/sky2v2-nightA.jpg",
+          "art-direction/textures/sky2v2/sky2v2-nightB.jpg",
+          "art-direction/textures/sky2v2/sky2v2-nightC.jpg"
+        ]
+      },
+      "areaPoolOffset": {
+        "hold_outskirts": 0,
+        "darkwood_edge": 0,
+        "forest_of_the_old_king": 0
+      },
+      "skyPool": {
+        "yawDeg": 29,
+        "blendSec": 90,
+        "areaFadeSec": 1,
+        "preloadFrac": 0.2,
+        "cacheMax": 6
+      }
+    },
+    "gather": {
+      "interactRadius": 1.6,
+      "promptText": "E - Gather {name}",
+      "gatherToast": "Gathered {name} x{n}",
+      "fullText": "Inventory full",
+      "respawnJitterPct": 15,
+      "fadeSec": 0.5,
+      "economy": {
+        "mode": "playtest",
+        "realSec": {
+          "common": 86400,
+          "rare": 604800
+        },
+        "reshuffleOnRespawn": false
+      },
+      "playtestGlow": true,
+      "placement": {
+        "treePropM": 4,
+        "propM": 3,
+        "treeMatch": "tree|oak|ash|yew|witchwood",
+        "enemyM": 5,
+        "spawnM": 6,
+        "spacingM": {
+          "hold_outskirts": 9,
+          "darkwood_edge": 6
+        }
+      },
+      "marker": {
+        "size": 0.16,
+        "height": 0.95,
+        "bobAmp": 0.08,
+        "bobHz": 0.6,
+        "pulseMin": 0.75,
+        "pulseHz": 1.1
+      },
+      "base": {
+        "radius": 0.32,
+        "height": 0.28,
+        "colorMult": 0.45
+      },
+      "nodeTypes": {
+        "herbBundle": {
+          "name": "Herb Bundle",
+          "rarity": "common",
+          "yield": {
+            "id": "forestHerb",
+            "count": 2
+          },
+          "respawnSec": 90,
+          "glowColor": 6728277,
+          "scale": 1
+        },
+        "deadwoodPile": {
+          "name": "Deadwood Pile",
+          "rarity": "common",
+          "yield": {
+            "id": "deadwood",
+            "count": 3
+          },
+          "respawnSec": 180,
+          "glowColor": 10061909,
+          "scale": 1
+        },
+        "mushroomCluster": {
+          "name": "Mushroom Cluster",
+          "rarity": "common",
+          "yield": {
+            "id": "wildMushroom",
+            "count": 2
+          },
+          "respawnSec": 120,
+          "glowColor": 11180492,
+          "scale": 0.85
+        },
+        "graveMoss": {
+          "name": "Grave Moss",
+          "rarity": "common",
+          "yield": {
+            "id": "graveMoss",
+            "count": 2
+          },
+          "respawnSec": 150,
+          "glowColor": 7846826,
+          "scale": 1
+        },
+        "bonePile": {
+          "name": "Bone Pile",
+          "rarity": "common",
+          "yield": {
+            "id": "boneShard",
+            "count": 2
+          },
+          "respawnSec": 150,
+          "glowColor": 12303274,
+          "scale": 1
+        }
+      }
+    },
+    "equip": {
+      "defaultHands": {
+        "right": "longsword",
+        "left": "magicGlove"
+      },
+      "twoHand": {
+        "lmb": "mainHand",
+        "rmb": "offHand"
+      },
+      "qSwap": [
+        "magicGlove",
+        "roundShield"
+      ],
+      "nativeHand": {
+        "longsword": "right",
+        "roundShield": "left",
+        "magicGlove": "left",
+        "torch": "left",
+        "dagger": "right"
+      },
+      "mirrorScale": [
+        -1,
+        1,
+        1
+      ],
+      "casterGlow": {
+        "anchor": "hand",
+        "handOffset": [
+          0.018,
+          0.078,
+          0.021
+        ],
+        "perHand": true,
+        "windupScale": 1.8
+      },
+      "itemStats": {
+        "magicDefense": {
+          "label": "Magic Defense",
+          "pct": true
+        }
+      }
+    },
+    "startingClasses": {
+      "order": [
+        "wanderer",
+        "magician"
+      ],
+      "wanderer": {
+        "label": "Wanderer",
+        "lines": [
+          "Longsword right, shield left",
+          "Torch, bandage - no spells"
+        ],
+        "kit": [
+          {
+            "id": "longsword",
+            "count": 1
+          },
+          {
+            "id": "roundShield",
+            "count": 1
+          },
+          {
+            "id": "torch",
+            "count": 1
+          },
+          {
+            "id": "bandage",
+            "count": 1
+          }
+        ],
+        "hands": {
+          "right": "longsword",
+          "left": "roundShield"
+        },
+        "spells": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "belt": [
+          null,
+          null,
+          {
+            "kind": "item",
+            "id": "roundShield"
+          },
+          {
+            "kind": "item",
+            "id": "torch"
+          },
+          null
+        ]
+      },
+      "magician": {
+        "label": "Magician",
+        "lines": [
+          "Dagger right, magic glove left",
+          "Bandage - knows Firebolt + Radiance"
+        ],
+        "kit": [
+          {
+            "id": "dagger",
+            "count": 1
+          },
+          {
+            "id": "magicGlove",
+            "count": 1
+          },
+          {
+            "id": "magicGlove",
+            "count": 1
+          },
+          {
+            "id": "bandage",
+            "count": 1
+          }
+        ],
+        "hands": {
+          "right": "dagger",
+          "left": "magicGlove"
+        },
+        "spells": [
+          "firebolt",
+          "radiance",
+          null,
+          null,
+          null
+        ],
+        "belt": [
+          {
+            "kind": "spell",
+            "id": "firebolt"
+          },
+          {
+            "kind": "spell",
+            "id": "radiance"
+          },
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "inventoryUI": {
+      "openKey": "KeyI",
+      "closeKeys": [
+        "KeyI",
+        "Escape"
+      ],
+      "dropKey": "KeyG",
+      "pickupKey": "KeyE",
+      "useKey": "KeyE",
+      "useLabel": "EAT",
+      "gridCols": 6,
+      "toastSeconds": 1.8,
+      "openButton": {
+        "enabled": true,
+        "label": "INV",
+        "left": 16,
+        "bottom": 20
+      }
+    },
+    "leveling": {
+      "pointsPerLevel": 5,
+      "maxLevel": 50,
+      "xpCurve": {
+        "base": 100,
+        "exp": 1.5
+      },
+      "xpSources": {
+        "kill_bandit": 35,
+        "kill_ghoul": 25,
+        "kill_wolf": 20,
+        "kill_rotmother": 240,
+        "kill_rotspawn": 14,
+        "gather": 5,
+        "cook_meal": 15,
+        "recipe_learn": 40,
+        "discover_region": 50,
+        "discover_node": 10,
+        "discover_foe": 25
+      },
+      "stats": [
+        "health",
+        "stamina",
+        "focus",
+        "speed",
+        "precision",
+        "ward",
+        "wisdom",
+        "carry",
+        "luck"
+      ],
+      "statCurves": {
+        "health": {
+          "label": "Health",
+          "perPoint": 1,
+          "cap": null,
+          "caption": "+{v} max HP"
+        },
+        "stamina": {
+          "label": "Stamina",
+          "perPoint": 1,
+          "cap": null,
+          "caption": "+{v} max stamina"
+        },
+        "focus": {
+          "label": "Focus",
+          "perPoint": 1,
+          "cap": null,
+          "caption": "+{v} max focus"
+        },
+        "speed": {
+          "label": "Speed",
+          "perPoint": 0.01,
+          "cap": 0.25,
+          "caption": "+{pct}% move speed"
+        },
+        "precision": {
+          "label": "Dexterity",
+          "perPoint": 0.01,
+          "cap": 0.5,
+          "caption": "{pct}% crit chance"
+        },
+        "ward": {
+          "label": "Defense",
+          "perPoint": 0.01,
+          "cap": 0.6,
+          "caption": "-{pct}% damage taken"
+        },
+        "wisdom": {
+          "label": "Wisdom",
+          "perPoint": 0.01,
+          "cap": null,
+          "caption": "+{pct}% magic damage, +{pct}% magic regen",
+          "magicRegenPerPoint": 0.05
+        },
+        "carry": {
+          "label": "Carry Weight",
+          "perPoint": 0.05,
+          "cap": null,
+          "caption": "+{pct}% stack size"
+        },
+        "luck": {
+          "label": "Luck",
+          "perPoint": 0.01,
+          "cap": 0.5,
+          "caption": "{pct}% bonus drop roll"
+        }
+      },
+      "critMult": 1.5,
+      "critFlashSeconds": 0.18,
+      "skillLines": {
+        "longBlade": {
+          "name": "Long Blade",
+          "perUse": {
+            "hit": 1
+          },
+          "passives": {
+            "damage": {
+              "perRank": 0.01,
+              "max": 0.6
+            },
+            "staminaCost": {
+              "perRank": -0.004,
+              "max": 0.35
+            }
+          },
+          "caption": "+{damage}% damage, -{staminaCost}% attack stamina"
+        },
+        "shieldDefense": {
+          "name": "Shield / Defense",
+          "perUse": {
+            "block": 1,
+            "parry": 2
+          },
+          "passives": {
+            "blockDrain": {
+              "perRank": -0.005,
+              "max": 0.4
+            },
+            "parryWindow": {
+              "perRank": 0.0005,
+              "max": 0.05
+            }
+          },
+          "caption": "-{blockDrain}% block drain, +{parryWindowMs}ms parry"
+        },
+        "pyromancy": {
+          "name": "Pyromancy",
+          "perUse": {
+            "cast": 1
+          },
+          "passives": {
+            "damage": {
+              "perRank": 0.01,
+              "max": 0.6
+            },
+            "focusCost": {
+              "perRank": -0.004,
+              "max": 0.35
+            }
+          },
+          "caption": "+{damage}% spell damage, -{focusCost}% focus cost"
+        },
+        "shortBlade": {
+          "name": "Short Blade",
+          "perUse": {
+            "hit": 1
+          },
+          "passives": {
+            "damage": {
+              "perRank": 0.02,
+              "max": 0.6
+            },
+            "critChance": {
+              "perRank": 0.01,
+              "max": 0.35
+            }
+          },
+          "caption": "+{damage}% damage, +{critChance}% crit chance"
+        }
+      },
+      "weaponLines": {
+        "dagger": "shortBlade"
+      },
+      "tiers": [
+        {
+          "name": "Novice",
+          "from": 1
+        },
+        {
+          "name": "Apprentice",
+          "from": 25
+        },
+        {
+          "name": "Adept",
+          "from": 50
+        },
+        {
+          "name": "Expert",
+          "from": 75
+        },
+        {
+          "name": "Grandmaster",
+          "from": 100
+        }
+      ],
+      "spellLines": {
+        "firebolt": "pyromancy",
+        "radiance": null
+      },
+      "rankCurve": {
+        "perRank": 5,
+        "slowFrom": 50,
+        "slowSpan": 25,
+        "maxRank": 100
+      },
+      "text": {
+        "levelUp": "Level {n} reached - +{pts} stat points",
+        "rankUp": "{name} rank {n}",
+        "allocateHint": "ALLOCATE",
+        "levelLabel": "Lv {n}",
+        "crit": "CRIT"
+      },
+      "levelToastSeconds": 2.6,
+      "rankToastSeconds": 1.6
+    }
+  }
+}

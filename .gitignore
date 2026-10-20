@@ -1,0 +1,24 @@
+# Build artifacts of the future UE project (P1+) never land here wholesale;
+# Content is binary-heavy and lives on Nicko's PC.
+Content/
+Binaries/
+Saved/
+Intermediate/
+DerivedDataCache/
+Plugins/**/Binaries/
+*.uprojectdirs/
+*.sln
+*.suo
+*.VC.db
+.vs/
+.vscode/
+.idea/
+
+# Tooling droppings
+__pycache__/
+node_modules/
+*.log
+.DS_Store
+
+# Local-only experiment outputs (artifacts/ue-port is the committed lane)
+artifacts/scratch/
